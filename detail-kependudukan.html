@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detail Kependudukan - Desa Sukamaju</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/all.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar-desa navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+        <div class="brand-text">
+          <div class="brand-name">Desa Sukamaju</div>
+          <div class="brand-sub">Kec. Ciawi - Kab. Bogor</div>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span style="color:white;font-size:1.3rem;"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil-desa.html">Profil Desa</a></li>
+          <li class="nav-item"><a class="nav-link active" href="detail-kependudukan.html">Kependudukan</a></li>
+          <li class="nav-item"><a class="nav-link" href="lihat-semua-berita.html">Berita</a></li>
+          <li class="nav-item ms-2"><a class="nav-link btn-wisata-nav" href="lihat-semua-wisata.html">Tempat Wisata</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="breadcrumb-wisata">
+        <a href="index.html">Beranda</a>
+        <i class="fas fa-chevron-right"></i>
+        <span style="color:rgba(255,255,255,0.9)">Kependudukan</span>
+      </div>
+      <h1 class="page-title">Detail <em>Kependudukan</em></h1>
+      <p class="page-desc">Ringkasan statistik penduduk Desa Sukamaju berdasarkan usia, dusun, pendidikan, pekerjaan, wajib pilih, perkawinan, dan agama.</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- STAT CARDS -->
+    <section class="kependudukan-detail-section">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label" style="justify-content:center;">Ringkasan</div>
+          <h2 class="section-title">Statistik <em>Utama</em></h2>
+          <p class="text-muted mt-2" style="font-size:0.9rem;">Data per Desember 2024</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-users"></i></div>
+              <div class="stat-number">8.432 <span class="stat-unit">jiwa</span></div>
+              <div class="stat-label">Total Penduduk</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-home"></i></div>
+              <div class="stat-number">2.108 <span class="stat-unit">KK</span></div>
+              <div class="stat-label">Kepala Keluarga</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-male"></i></div>
+              <div class="stat-number">4.210 <span class="stat-unit">jiwa</span></div>
+              <div class="stat-label">Penduduk Laki-laki</div>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-female"></i></div>
+              <div class="stat-number">4.222 <span class="stat-unit">jiwa</span></div>
+              <div class="stat-label">Penduduk Perempuan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USIA DAN DUSUN -->
+    <section class="kependudukan-detail-section alt">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-xl-8">
+            <div class="chart-panel">
+              <h2 class="chart-panel-title">Berdasarkan Kelompok Umur</h2>
+              <p class="chart-panel-desc">Piramida penduduk berdasarkan kelompok umur, laki-laki, dan perempuan.</p>
+              <div class="chart-box population">
+                <canvas id="populationPyramid"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="chart-panel">
+              <h2 class="chart-panel-title">Berdasarkan Dusun</h2>
+              <p class="chart-panel-desc">Sebaran jumlah penduduk pada tiap dusun.</p>
+              <div class="chart-box">
+                <canvas id="dusunPieChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PENDIDIKAN DAN PEKERJAAN -->
+    <section class="kependudukan-detail-section">
+      <div class="container">
+        <div class="row g-4 mb-4">
+          <div class="col-lg-12">
+            <div class="chart-panel">
+              <h2 class="chart-panel-title">Berdasarkan Pendidikan</h2>
+              <p class="chart-panel-desc">Data pendidikan terakhir penduduk Desa Sukamaju.</p>
+              <div class="chart-box">
+                <canvas id="pendidikanBarChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-panel">
+          <h2 class="chart-panel-title">Berdasarkan Pekerjaan</h2>
+          <p class="chart-panel-desc">Daftar pekerjaan dan jumlah penduduk. Data dengan jumlah 0 tidak ditampilkan.</p>
+          <div class="pekerjaan-layout">
+            <div class="pekerjaan-list" id="pekerjaanList"></div>
+            <div class="pekerjaan-card-grid" id="pekerjaanCards"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WAJIB PILIH -->
+    <section class="kependudukan-detail-section alt">
+      <div class="container">
+        <div class="chart-panel">
+          <h2 class="chart-panel-title">Berdasarkan Wajib Pilih</h2>
+          <p class="chart-panel-desc">Jumlah penduduk wajib pilih berdasarkan tahun pendataan.</p>
+          <div class="chart-box">
+            <canvas id="wajibPilihBarChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERKAWINAN -->
+    <section class="kependudukan-detail-section">
+      <div class="container">
+        <div class="mb-4">
+          <div class="section-label">Status Penduduk</div>
+          <h2 class="section-title">Berdasarkan <em>Perkawinan</em></h2>
+        </div>
+        <div class="category-card-grid">
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-user"></i></div>
+            <div>
+              <div class="category-card-title">Belum Kawin</div>
+              <div class="category-card-value">3.142</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-heart"></i></div>
+            <div>
+              <div class="category-card-title">Kawin</div>
+              <div class="category-card-value">4.856</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-ribbon"></i></div>
+            <div>
+              <div class="category-card-title">Cerai Mati</div>
+              <div class="category-card-value">312</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-file-signature"></i></div>
+            <div>
+              <div class="category-card-title">Kawin Tercatat</div>
+              <div class="category-card-value">4.512</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-user-slash"></i></div>
+            <div>
+              <div class="category-card-title">Cerai Hidup</div>
+              <div class="category-card-value">122</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-ban"></i></div>
+            <div>
+              <div class="category-card-title">Kawin Tidak Tercatat</div>
+              <div class="category-card-value">344</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGAMA -->
+    <section class="kependudukan-detail-section alt">
+      <div class="container">
+        <div class="mb-4">
+          <div class="section-label">Kepercayaan</div>
+          <h2 class="section-title">Berdasarkan <em>Agama</em></h2>
+        </div>
+        <div class="category-card-grid">
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-mosque"></i></div>
+            <div>
+              <div class="category-card-title">Islam</div>
+              <div class="category-card-value">8.012</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-church"></i></div>
+            <div>
+              <div class="category-card-title">Kristen</div>
+              <div class="category-card-value">214</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-cross"></i></div>
+            <div>
+              <div class="category-card-title">Katolik</div>
+              <div class="category-card-value">126</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-om"></i></div>
+            <div>
+              <div class="category-card-title">Hindu</div>
+              <div class="category-card-value">38</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-dharmachakra"></i></div>
+            <div>
+              <div class="category-card-title">Buddha</div>
+              <div class="category-card-value">27</div>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="category-illustration"><i class="fas fa-yin-yang"></i></div>
+            <div>
+              <div class="category-card-title">Konghucu</div>
+              <div class="category-card-value">15</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-desa">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-1">
+            <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+            <div class="footer-brand">Desa Sukamaju</div>
+          </div>
+          <p class="footer-desc mt-3">
+            Portal resmi Desa Sukamaju, Kecamatan Ciawi, Kabupaten Bogor.
+            Melayani masyarakat dengan transparan, akuntabel, dan profesional.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-title">Navigasi</div>
+          <a href="index.html" class="footer-link">Beranda</a>
+          <a href="profil-desa.html" class="footer-link">Profil Desa</a>
+          <a href="detail-kependudukan.html" class="footer-link">Kependudukan</a>
+          <a href="lihat-semua-wisata.html" class="footer-link">Wisata</a>
+          <a href="lihat-semua-berita.html" class="footer-link">Berita</a>
+          <a href="lihat-semua-galeri.html" class="footer-link">Galeri</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-title">Layanan</div>
+          <a href="#" class="footer-link">Surat Keterangan</a>
+          <a href="#" class="footer-link">Pengaduan</a>
+          <a href="#" class="footer-link">Transparansi APBDes</a>
+          <a href="#" class="footer-link">PPID</a>
+          <a href="#" class="footer-link">Potensi Desa</a>
+        </div>
+        <div class="col-lg-4">
+          <div class="footer-title">Kontak</div>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Jl. Raya Sukamaju No. 1, Kec. Ciawi, Kab. Bogor, Jawa Barat 16760</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone"></i>
+            <span>(0251) 123-4567</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>desa.sukamaju@bogorkab.go.id</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-clock"></i>
+            <span>Senin - Jumat, 08.00 - 15.00 WIB</span>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        &copy; 2025 Pemerintah Desa Sukamaju - Kecamatan Ciawi, Kabupaten Bogor - Dibuat untuk masyarakat desa
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/all.js"></script>
+  <script>
+    const green = '#6eaa97';
+    const greenDark = '#2d5a3d';
+    const peach = '#ffb49c';
+    const gold = '#c9a84c';
+    const grid = '#dbe7ef';
+
+    Chart.defaults.font.family = "'DM Sans', sans-serif";
+    Chart.defaults.color = '#4a6555';
+
+    const ageLabels = ['85+', '80-84', '75-79', '70-74', '65-69', '60-64', '55-59', '50-54', '45-49', '40-44', '35-39', '30-34', '25-29', '20-24', '15-19', '10-14', '5-9', '0-4'];
+    const male = [24, 30, 47, 36, 53, 130, 172, 178, 267, 297, 178, 261, 326, 374, 385, 457, 510, 485];
+    const female = [33, 20, 26, 66, 40, 119, 159, 225, 298, 344, 225, 318, 364, 364, 291, 377, 490, 463];
+
+    new Chart(document.getElementById('populationPyramid'), {
+      type: 'bar',
+      data: {
+        labels: ageLabels,
+        datasets: [
+          {
+            label: 'Laki-laki',
+            data: male.map(value => -value),
+            backgroundColor: green,
+            borderRadius: 8,
+            barPercentage: 0.7
+          },
+          {
+            label: 'Perempuan',
+            data: female,
+            backgroundColor: peach,
+            borderRadius: 8,
+            barPercentage: 0.7
+          }
+        ]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          x: {
+            min: -560,
+            max: 560,
+            grid: { color: grid },
+            ticks: { callback: value => Math.abs(value) }
+          },
+          y: { grid: { color: grid } }
+        },
+        plugins: {
+          legend: { position: 'top' },
+          tooltip: {
+            callbacks: {
+              label: context => `${context.dataset.label}: ${Math.abs(context.raw)}`
+            }
+          }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('dusunPieChart'), {
+      type: 'pie',
+      data: {
+        labels: ['Dusun I', 'Dusun II', 'Dusun III', 'Dusun IV'],
+        datasets: [{
+          data: [2145, 1988, 2234, 2065],
+          backgroundColor: ['#52a96e', '#8dd4a0', '#c9a84c', '#2d5a3d'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom' } }
+      }
+    });
+
+    new Chart(document.getElementById('pendidikanBarChart'), {
+      type: 'bar',
+      data: {
+        labels: ['Tidak Sekolah', 'SD', 'SMP', 'SMA', 'Diploma', 'S1', 'S2+'],
+        datasets: [{
+          label: 'Jumlah Penduduk',
+          data: [420, 2698, 2277, 2530, 210, 260, 37],
+          backgroundColor: '#52a96e',
+          borderRadius: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: { beginAtZero: true, grid: { color: grid } },
+          x: { grid: { display: false } }
+        },
+        plugins: { legend: { display: false } }
+      }
+    });
+
+    new Chart(document.getElementById('wajibPilihBarChart'), {
+      type: 'bar',
+      data: {
+        labels: ['2020', '2021', '2022', '2023', '2024'],
+        datasets: [{
+          label: 'Wajib Pilih',
+          data: [5460, 5588, 5712, 5890, 6048],
+          backgroundColor: gold,
+          borderRadius: 8
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: { beginAtZero: true, grid: { color: grid } },
+          x: { grid: { display: false } }
+        },
+        plugins: { legend: { display: false } }
+      }
+    });
+
+    const pekerjaanData = [
+      ['Petani', 2100, 'fa-seedling'],
+      ['Wirausaha', 900, 'fa-store'],
+      ['Buruh / Karyawan', 1300, 'fa-helmet-safety'],
+      ['PNS / TNI / POLRI', 280, 'fa-user-shield'],
+      ['Pelajar / Mahasiswa', 1600, 'fa-graduation-cap'],
+      ['Ibu Rumah Tangga', 1400, 'fa-house-user'],
+      ['Pensiunan', 180, 'fa-person-cane'],
+      ['Lainnya', 672, 'fa-briefcase']
+    ];
+
+    document.getElementById('pekerjaanList').innerHTML = pekerjaanData
+      .filter(item => item[1] > 0)
+      .map(item => `
+        <div class="pekerjaan-list-item">
+          <div class="pekerjaan-name">${item[0]}</div>
+          <div class="pekerjaan-count">${item[1].toLocaleString('id-ID')}</div>
+        </div>
+      `).join('');
+
+    document.getElementById('pekerjaanCards').innerHTML = pekerjaanData
+      .filter(item => item[1] > 0)
+      .map(item => `
+        <div class="pekerjaan-card">
+          <i class="fas ${item[2]}"></i>
+          <div class="pekerjaan-card-value">${item[1].toLocaleString('id-ID')}</div>
+          <div class="pekerjaan-card-label">${item[0]}</div>
+        </div>
+      `).join('');
+  </script>
+</body>
+
+</html>

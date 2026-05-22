@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semua Berita â€” Desa Sukamaju</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/all.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar-desa navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+        <div class="brand-text">
+          <div class="brand-name">Desa Sukamaju</div>
+          <div class="brand-sub">Kec. Ciawi Â· Kab. Bogor</div>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span style="color:white;font-size:1.3rem;"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#profil">Profil Desa</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#kependudukan">Kependudukan</a></li>
+          <li class="nav-item"><a class="nav-link active" href="lihat-semua-berita.html">Berita</a></li>
+          <li class="nav-item ms-2"><a class="nav-link btn-wisata-nav" href="lihat-semua-wisata.html">ðŸŒ¿ Wisata</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="breadcrumb-news">
+        <a href="index.html">Beranda</a>
+        <i class="fas fa-chevron-right"></i>
+        <span style="color:rgba(255,255,255,0.9)">Berita Desa</span>
+      </div>
+      <h1 class="page-title">Kabar <em>Berita Desa</em></h1>
+      <p class="page-desc">Informasi terkini, pengumuman, dan liputan berbagai kegiatan dari Pemerintah dan warga Desa Sukamaju.</p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="berita-grid-section">
+    <div class="container">
+      
+      <!-- Filter & Search Bar -->
+      <div class="filter-wrapper mb-5">
+        <div class="filter-pills">
+          <div class="filter-pill active">Semua Berita</div>
+          <div class="filter-pill">Pemerintahan</div>
+          <div class="filter-pill">Pembangunan</div>
+          <div class="filter-pill">Sosial & Budaya</div>
+          <div class="filter-pill">Kesehatan</div>
+          <div class="filter-pill">Ekonomi</div>
+        </div>
+        <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Cari berita...">
+        </div>
+      </div>
+
+      <!-- Berita Grid -->
+      <div class="row g-4">
+        
+        <!-- Berita 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="berita-card">
+            <div class="berita-img">
+              <span class="berita-kategori">Festival & Acara</span>
+              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="berita" />
+            </div>
+            <div class="berita-body">
+              <div class="berita-date">12 Mei 2025</div>
+              <div class="berita-title">Festival Panen Raya Desa Sukamaju Siap Digelar Juni 2025</div>
+              <div class="berita-excerpt">Setelah sukses besar tahun lalu, festival tahunan yang menampilkan hasil bumi, seni budaya tradisional, dan kuliner khas desa kembali hadir dengan skala lebih besar.</div>
+              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="berita-card">
+            <div class="berita-img">
+              <span class="berita-kategori">Infrastruktur</span>
+              <img src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=600&q=80" alt="berita" />
+            </div>
+            <div class="berita-body">
+              <div class="berita-date">5 Mei 2025</div>
+              <div class="berita-title">Jalur Baru Menuju Curug Pelangi Resmi Dibuka untuk Umum</div>
+              <div class="berita-excerpt">Pemerintah desa berhasil menyelesaikan pembangunan jalur wisata baru yang lebih nyaman, aman, dan dapat dilalui oleh berbagai kalangan usia.</div>
+              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="berita-card">
+            <div class="berita-img">
+              <span class="berita-kategori">UMKM & Ekonomi</span>
+              <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="berita" />
+            </div>
+            <div class="berita-body">
+              <div class="berita-date">29 Apr 2025</div>
+              <div class="berita-title">UMKM Desa Sukamaju Tembus Pasar Ekspor ke Singapura</div>
+              <div class="berita-excerpt">Kelompok UMKM Maju Bersama berhasil mengekspor produk olahan herbal ke Singapura dan Malaysia berkat bantuan pendampingan dari Dinas Perindustrian.</div>
+              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita 4 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="berita-card">
+            <div class="berita-img">
+              <span class="berita-kategori">Infrastruktur</span>
+              <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80" alt="berita" />
+            </div>
+            <div class="berita-body">
+              <div class="berita-date">18 Apr 2025</div>
+              <div class="berita-title">Pembangunan Jalan Lingkar Desa Capai 80% Progress</div>
+              <div class="berita-excerpt">Proyek strategis jalan lingkar yang akan memudahkan distribusi hasil panen para petani hampir selesai dan ditargetkan beroperasi bulan depan.</div>
+              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita 5 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="berita-card">
+            <div class="berita-img">
+              <span class="berita-kategori">Kesehatan</span>
+              <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600&q=80" alt="berita" />
+            </div>
+            <div class="berita-body">
+              <div class="berita-date">10 Apr 2025</div>
+              <div class="berita-title">Posyandu Anggrek Raih Predikat Terbaik Kabupaten Bogor</div>
+              <div class="berita-excerpt">Peningkatan gizi balita dan kelengkapan imunisasi menjadikan Posyandu Anggrek Desa Sukamaju meraih penghargaan tingkat kabupaten.</div>
+              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Berita 6 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="berita-card">
+            <div class="berita-img">
+              <span class="berita-kategori">Sosial & Budaya</span>
+              <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=600&q=80" alt="berita" />
+            </div>
+            <div class="berita-body">
+              <div class="berita-date">2 Apr 2025</div>
+              <div class="berita-title">Gotong Royong Bersih Desa Jelang Bulan Suci Ramadhan</div>
+              <div class="berita-excerpt">Tradisi gotong royong warga Sukamaju dalam membersihkan lingkungan dan tempat ibadah tetap terjaga dengan antusiasme yang tinggi.</div>
+              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination-custom">
+        <a href="#" class="page-item-custom"><i class="fas fa-chevron-left"></i></a>
+        <a href="#" class="page-item-custom active">1</a>
+        <a href="#" class="page-item-custom">2</a>
+        <a href="#" class="page-item-custom">3</a>
+        <a href="#" class="page-item-custom"><i class="fas fa-chevron-right"></i></a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-1">
+            <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+            <div class="footer-brand">Desa Sukamaju</div>
+          </div>
+          <p class="footer-desc mt-3">
+            Portal resmi Desa Sukamaju, Kecamatan Ciawi, Kabupaten Bogor.
+            Melayani masyarakat dengan transparan, akuntabel, dan profesional.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-title">Navigasi</div>
+          <a href="index.html" class="footer-link">Beranda</a>
+          <a href="index.html#profil" class="footer-link">Profil Desa</a>
+          <a href="index.html#kependudukan" class="footer-link">Kependudukan</a>
+          <a href="lihat-semua-wisata.html" class="footer-link">Wisata</a>
+          <a href="lihat-semua-berita.html" class="footer-link">Berita</a>
+          <a href="lihat-semua-galeri.html" class="footer-link">Galeri</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-title">Kategori Berita</div>
+          <a href="#" class="footer-link">Festival & Acara</a>
+          <a href="#" class="footer-link">Pariwisata</a>
+          <a href="#" class="footer-link">UMKM & Ekonomi</a>
+          <a href="#" class="footer-link">Pemerintahan</a>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-title">Kontak</div>
+          <div style="font-size:0.87rem; line-height:2.2;">
+            <div><i class="fas fa-phone me-2" style="color:var(--green-fresh)"></i>(0251) 123-4567</div>
+            <div><i class="fas fa-envelope me-2" style="color:var(--green-fresh)"></i>desa.sukamaju@bogorkab.go.id</div>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        Â© 2025 Pemerintah Desa Sukamaju Â· Kecamatan Ciawi, Kabupaten Bogor
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/all.js"></script>
+</body>
+
+</html>
+

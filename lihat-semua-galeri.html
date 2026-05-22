@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeri â€” Desa Sukamaju</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/all.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar-desa navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+        <div class="brand-text">
+          <div class="brand-name">Desa Sukamaju</div>
+          <div class="brand-sub">Kec. Ciawi Â· Kab. Bogor</div>
+        </div>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span style="color:white;font-size:1.3rem;"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#profil">Profil Desa</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#kependudukan">Kependudukan</a></li>
+          <li class="nav-item"><a class="nav-link" href="lihat-semua-berita.html">Berita</a></li>
+          <li class="nav-item ms-2"><a class="nav-link btn-wisata-nav" href="lihat-semua-wisata.html">ðŸŒ¿ Wisata</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container position-relative" style="z-index: 2;">
+      <div class="breadcrumb-news">
+        <a href="index.html">Beranda</a>
+        <i class="fas fa-chevron-right"></i>
+        <span style="color:rgba(255,255,255,0.9)">Galeri</span>
+      </div>
+      <h1 class="page-title">Galeri <em>Desa</em></h1>
+      <p class="page-desc">Kumpulan memori, dokumentasi kegiatan warga, dan potret keindahan alam Desa Sukamaju.</p>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="gallery-section">
+    <div class="container">
+      
+      <!-- Filter -->
+      <div class="filter-wrapper">
+        <div class="filter-pill active">Semua</div>
+        <div class="filter-pill">Kegiatan Warga</div>
+        <div class="filter-pill">Pariwisata</div>
+        <div class="filter-pill">Infrastruktur</div>
+        <div class="filter-pill">Seni Budaya</div>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="masonry-grid">
+        
+        <!-- Item 1 (Portrait) -->
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=800&q=80')">
+          <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?w=600&q=80" alt="Galeri" />
+          <div class="gallery-expand-icon"><i class="fas fa-expand"></i></div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Seni Budaya</span>
+            <div class="gallery-title">Tarian Tradisional</div>
+            <div class="gallery-date">12 Mei 2025</div>
+          </div>
+        </div>
+
+        <!-- Item 2 (Landscape) -->
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80')">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80" alt="Galeri" />
+          <div class="gallery-expand-icon"><i class="fas fa-expand"></i></div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Pariwisata</span>
+            <div class="gallery-title">Curug Pelangi</div>
+            <div class="gallery-date">5 Mei 2025</div>
+          </div>
+        </div>
+
+        <!-- Item 3 (Landscape) -->
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80')">
+          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=600&q=80" alt="Galeri" />
+          <div class="gallery-expand-icon"><i class="fas fa-expand"></i></div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Kegiatan Warga</span>
+            <div class="gallery-title">Pasar UMKM Desa</div>
+            <div class="gallery-date">28 Apr 2025</div>
+          </div>
+        </div>
+
+        <!-- Item 4 (Portrait) -->
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&q=80')">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=600&q=80" alt="Galeri" />
+          <div class="gallery-expand-icon"><i class="fas fa-expand"></i></div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Pariwisata</span>
+            <div class="gallery-title">Bukit Panorama</div>
+            <div class="gallery-date">14 Apr 2025</div>
+          </div>
+        </div>
+
+        <!-- Item 5 (Landscape) -->
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=800&q=80')">
+          <img src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=600&q=80" alt="Galeri" />
+          <div class="gallery-expand-icon"><i class="fas fa-expand"></i></div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Infrastruktur</span>
+            <div class="gallery-title">Pembangunan Jalan Baru</div>
+            <div class="gallery-date">10 Apr 2025</div>
+          </div>
+        </div>
+
+        <!-- Item 6 (Portrait) -->
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=800&q=80')">
+          <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=600&q=80" alt="Galeri" />
+          <div class="gallery-expand-icon"><i class="fas fa-expand"></i></div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Kegiatan Warga</span>
+            <div class="gallery-title">Kerja Bakti Sungai</div>
+            <div class="gallery-date">2 Apr 2025</div>
+          </div>
+        </div>
+
+        <!-- Item 7 (Landscape) -->
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80')">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" alt="Galeri" />
+          <div class="gallery-expand-icon"><i class="fas fa-expand"></i></div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Seni Budaya</span>
+            <div class="gallery-title">Festival Panen Raya</div>
+            <div class="gallery-date">20 Mar 2025</div>
+          </div>
+        </div>
+
+        <!-- Item 8 (Landscape) -->
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80')">
+          <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" alt="Galeri" />
+          <div class="gallery-expand-icon"><i class="fas fa-expand"></i></div>
+          <div class="gallery-overlay">
+            <span class="gallery-category">Pariwisata</span>
+            <div class="gallery-title">Kebun Teh Sukamaju</div>
+            <div class="gallery-date">10 Mar 2025</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Load More Button -->
+      <div class="text-center mt-5">
+        <button class="btn-wisata-nav border-0" style="padding: 12px 30px !important; font-size: 0.95rem;">
+          <i class="fas fa-spinner me-2"></i> Muat Lebih Banyak
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- LIGHTBOX (Hidden by default) -->
+  <div class="lightbox-modal" id="lightbox">
+    <i class="fas fa-times lightbox-close" onclick="closeLightbox()"></i>
+    <img src="" id="lightboxImg" style="max-width: 90%; max-height: 85vh; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);" alt="Zoomed image" />
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="d-flex align-items-center gap-3 mb-1">
+            <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+            <div class="footer-brand">Desa Sukamaju</div>
+          </div>
+          <p class="footer-desc mt-3">
+            Portal resmi Desa Sukamaju, Kecamatan Ciawi, Kabupaten Bogor.
+            Melayani masyarakat dengan transparan, akuntabel, dan profesional.
+          </p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <div class="footer-title">Navigasi</div>
+          <a href="index.html" class="footer-link">Beranda</a>
+          <a href="index.html#profil" class="footer-link">Profil Desa</a>
+          <a href="index.html#kependudukan" class="footer-link">Kependudukan</a>
+          <a href="lihat-semua-wisata.html" class="footer-link">Wisata</a>
+          <a href="lihat-semua-berita.html" class="footer-link">Berita</a>
+          <a href="lihat-semua-galeri.html" class="footer-link">Galeri</a>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="footer-title">Kategori Berita</div>
+          <a href="#" class="footer-link">Festival & Acara</a>
+          <a href="#" class="footer-link">Pariwisata</a>
+          <a href="#" class="footer-link">UMKM & Ekonomi</a>
+          <a href="#" class="footer-link">Pemerintahan</a>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-title">Kontak</div>
+          <div style="font-size:0.87rem; line-height:2.2;">
+            <div><i class="fas fa-phone me-2" style="color:var(--green-fresh)"></i>(0251) 123-4567</div>
+            <div><i class="fas fa-envelope me-2" style="color:var(--green-fresh)"></i>desa.sukamaju@bogorkab.go.id</div>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom">
+        Â© 2025 Pemerintah Desa Sukamaju Â· Kecamatan Ciawi, Kabupaten Bogor
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/all.js"></script>
+</body>
+
+</html>
+
