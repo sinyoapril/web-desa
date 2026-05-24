@@ -1,209 +1,445 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desa Sukamaju | Website Resmi</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desa Sukamaju | Website Resmi</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+  </head>
 
-  <link rel="stylesheet" href="assets/css/all.css" />
-</head>
-
-<body>
-  <!-- NAVBAR -->
-  <nav class="navbar-desa navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <div class="brand-logo"><i class="fas fa-leaf"></i></div>
-        <div class="brand-text">
-          <div class="brand-name">Desa Sukamaju</div>
-          <div class="brand-sub">Kec. Ciawi · Kab. Bogor</div>
-        </div>
-      </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span style="color:white;font-size:1.3rem;"><i class="fas fa-bars"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-center gap-1">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#profil">Profil Desa</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#kependudukan">Kependudukan</a></li>
-          <li class="nav-item"><a class="nav-link" href="lihat-semua-berita.html">Berita</a></li>
-          <li class="nav-item ms-2"><a class="nav-link btn-wisata-nav" href="lihat-semua-wisata.html">Tempat Wisata</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero" style="padding-top: 80px;">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-7">
-          <div class="hero-badge">
-            <i class="fas fa-map-marker-alt"></i>
-            Kecamatan Ciawi, Kabupaten Bogor
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar-desa navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+          <div class="brand-text">
+            <div class="brand-name">Desa Sukamaju</div>
+            <div class="brand-sub">Kec. Ciawi · Kab. Bogor</div>
           </div>
-          <h1 class="hero-title">
-            Selamat Datang di
-            <span>Desa Sukamaju</span>
-          </h1>
-          <p class="hero-desc">
-            Desa yang kaya akan keindahan alam, budaya lokal, dan destinasi wisata memukau.
-            Temukan pengalaman tak terlupakan di antara hijaunya alam Jawa Barat.
-          </p>
-          <div class="hero-actions">
-            <a href="#wisata" class="btn-hero-primary">
-              <i class="fas fa-compass me-2"></i>Jelajahi Wisata
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span style="color: white; font-size: 1.3rem"
+            ><i class="fas fa-bars"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-center gap-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#profil">Profil Desa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#kependudukan"
+                >Kependudukan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lihat-semua-berita.html">Berita</a>
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link btn-wisata-nav" href="lihat-semua-wisata.html"
+                >🌿Tempat Wisata</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" style="padding-top: 80px">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="hero-badge">
+              <i class="fas fa-map-marker-alt"></i>
+              Kecamatan Ciawi, Kabupaten Bogor
+            </div>
+            <h1 class="hero-title">
+              Selamat Datang di
+              <span>Desa Sukamaju</span>
+            </h1>
+            <p class="hero-desc">
+              Desa yang kaya akan keindahan alam, budaya lokal, dan destinasi
+              wisata memukau. Temukan pengalaman tak terlupakan di antara
+              hijaunya alam Jawa Barat.
+            </p>
+            <div class="hero-actions">
+              <a href="#wisata" class="btn-hero-primary">
+                <i class="fas fa-compass me-2"></i>Jelajahi Wisata
+              </a>
+              <a href="#profil" class="btn-hero-outline">
+                <i class="fas fa-info-circle me-2"></i>Profil Desa
+              </a>
+            </div>
+
+            <!-- Tampil di HP saja -->
+            <div class="hero-stats d-flex d-lg-none mt-5">
+              <div>
+                <div class="hero-stat-num">12+</div>
+                <div class="hero-stat-label">Destinasi Wisata</div>
+              </div>
+              <div>
+                <div class="hero-stat-num">8.4K</div>
+                <div class="hero-stat-label">Penduduk</div>
+              </div>
+              <div>
+                <div class="hero-stat-num">420</div>
+                <div class="hero-stat-label">Hektar Luas</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
+            <div class="hero-stats-scattered">
+              <div class="scattered-stat s1">
+                <div class="hero-stat-num">12+</div>
+                <div class="hero-stat-label">Destinasi Wisata</div>
+              </div>
+              <div class="scattered-stat s2">
+                <div class="hero-stat-num">8.4K</div>
+                <div class="hero-stat-label">Penduduk</div>
+              </div>
+              <div class="scattered-stat s3">
+                <div class="hero-stat-num">420</div>
+                <div class="hero-stat-label">Hektar Luas</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ========== WISATA ========== -->
+    <section class="wisata-section" id="wisata">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-7">
+            <div class="section-label">Pariwisata</div>
+            <h2 class="section-title">
+              Destinasi <em>Unggulan</em><br />Desa Sukamaju
+            </h2>
+          </div>
+          <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+            <a href="lihat-semua-wisata.html" class="btn-outline-green"
+              >Lihat Semua Wisata <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Featured -->
+          <div class="col-lg-7">
+            <div class="wisata-featured">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80"
+                alt="Curug Pelangi"
+              />
+              <div class="wisata-featured-overlay">
+                <span class="wisata-tag">⭐ Unggulan</span>
+                <h3 class="wisata-featured-title">
+                  <a href="detail-wisata.html">Curug Pelangi Sukamaju</a>
+                </h3>
+                <p class="wisata-featured-desc">
+                  Air terjun cantik dengan pelangi alami yang terbentuk setiap
+                  pagi hari. Dikelilingi hutan tropis yang sejuk dan
+                  menyegarkan.
+                </p>
+                <div class="wisata-meta">
+                  <span
+                    ><i class="fas fa-map-marker-alt"></i>2 km dari pusat
+                    desa</span
+                  >
+                  <span><i class="fas fa-clock"></i>07.00 – 17.00</span>
+                  <span><i class="fas fa-ticket-alt"></i>Rp 15.000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small cards -->
+          <div class="col-lg-5">
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="wisata-card-small">
+                  <div class="wisata-card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&q=80"
+                      alt="Kebun Teh"
+                    />
+                  </div>
+                  <div class="wisata-card-body">
+                    <span class="wisata-card-tag">Alam</span>
+                    <div class="wisata-card-title">
+                      <a href="detail-wisata.html">Kebun Teh Puncak</a>
+                    </div>
+                    <div class="wisata-card-info">
+                      <span class="rating-stars">★★★★★</span>
+                      <span style="color: var(--text-light)">4.9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="wisata-card-small">
+                  <div class="wisata-card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=400&q=80"
+                      alt="Goa Peninggalan"
+                    />
+                  </div>
+                  <div class="wisata-card-body">
+                    <span class="wisata-card-tag">Sejarah</span>
+                    <div class="wisata-card-title">
+                      <a href="detail-wisata.html">Goa Peninggalan</a>
+                    </div>
+                    <div class="wisata-card-info">
+                      <span class="rating-stars">★★★★☆</span>
+                      <span style="color: var(--text-light)">4.6</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="wisata-card-small">
+                  <div class="wisata-card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=400&q=80"
+                      alt="Sungai Hijau"
+                    />
+                  </div>
+                  <div class="wisata-card-body">
+                    <span class="wisata-card-tag">Petualangan</span>
+                    <div class="wisata-card-title">
+                      <a href="detail-wisata.html">Sungai Hijau</a>
+                    </div>
+                    <div class="wisata-card-info">
+                      <span class="rating-stars">★★★★★</span>
+                      <span style="color: var(--text-light)">4.8</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="wisata-card-small">
+                  <div class="wisata-card-img">
+                    <img
+                      src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&q=80"
+                      alt="Bukit Panorama"
+                    />
+                  </div>
+                  <div class="wisata-card-body">
+                    <span class="wisata-card-tag">Panorama</span>
+                    <div class="wisata-card-title">
+                      <a href="detail-wisata.html">Bukit Panorama</a>
+                    </div>
+                    <div class="wisata-card-info">
+                      <span class="rating-stars">★★★★★</span>
+                      <span style="color: var(--text-light)">5.0</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROFIL DESA ========== -->
+    <section class="profil-section" id="profil">
+      <div class="container position-relative">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <div class="section-label" style="color: var(--green-light)">
+              Tentang Kami
+            </div>
+            <h2 class="section-title" style="color: white">
+              Profil <em style="color: var(--gold-light)">Desa</em
+              ><br />Sukamaju
+            </h2>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 0.95rem;
+                line-height: 1.9;
+                margin: 1.5rem 0 2rem;
+              "
+            >
+              Desa Sukamaju adalah desa yang terletak di kaki Gunung Gede
+              Pangrango, dikenal dengan kekayaan alam, keramahan warga, dan
+              potensi wisata yang luar biasa.
+            </p>
+
+            <a href="profil-desa.html" class="btn-profil-detail mb-4">
+              Lihat Selengkapnya
+              <i class="fas fa-arrow-right"></i>
             </a>
-            <a href="#profil" class="btn-hero-outline">
-              <i class="fas fa-info-circle me-2"></i>Profil Desa
-            </a>
-          </div>
-          
-          <!-- Tampil di HP saja -->
-          <div class="hero-stats d-flex d-lg-none mt-5">
-            <div>
-              <div class="hero-stat-num">12+</div>
-              <div class="hero-stat-label">Destinasi Wisata</div>
-            </div>
-            <div>
-              <div class="hero-stat-num">8.4K</div>
-              <div class="hero-stat-label">Penduduk</div>
-            </div>
-            <div>
-              <div class="hero-stat-num">420</div>
-              <div class="hero-stat-label">Hektar Luas</div>
-            </div>
-          </div>
-          
-        </div>
-        <div class="col-lg-4 offset-lg-1 d-none d-lg-block">
-          <div class="hero-stats-scattered">
-            <div class="scattered-stat s1">
-              <div class="hero-stat-num">12+</div>
-              <div class="hero-stat-label">Destinasi Wisata</div>
-            </div>
-            <div class="scattered-stat s2">
-              <div class="hero-stat-num">8.4K</div>
-              <div class="hero-stat-label">Penduduk</div>
-            </div>
-            <div class="scattered-stat s3">
-              <div class="hero-stat-num">420</div>
-              <div class="hero-stat-label">Hektar Luas</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span>Scroll</span>
-      <i class="fas fa-chevron-down"></i>
-    </div>
-  </section>
 
-  <!-- ========== WISATA ========== -->
-  <section class="wisata-section" id="wisata">
-    <div class="container">
-      <div class="row align-items-end mb-5">
-        <div class="col-lg-7">
-          <div class="section-label">Pariwisata</div>
-          <h2 class="section-title">Destinasi <em>Unggulan</em><br>Desa Sukamaju</h2>
-        </div>
-        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
-          <a href="lihat-semua-wisata.html" class="btn-outline-green">Lihat Semua Wisata <i
-              class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+            <div class="visi-misi-card mb-4">
+              <div class="visi-title">Visi Desa</div>
+              <div class="visi-text">
+                "Terwujudnya Desa Sukamaju yang maju, mandiri, dan berdaya saing
+                berbasis pertanian dan pariwisata berkelanjutan."
+              </div>
+            </div>
 
-      <div class="row g-4">
-        <!-- Featured -->
-        <div class="col-lg-7">
-          <div class="wisata-featured">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900&q=80" alt="Curug Pelangi" />
-            <div class="wisata-featured-overlay">
-              <span class="wisata-tag">⭐ Unggulan</span>
-              <h3 class="wisata-featured-title"><a href="detail-wisata.html">Curug Pelangi Sukamaju</a></h3>
-              <p class="wisata-featured-desc">
-                Air terjun cantik dengan pelangi alami yang terbentuk setiap pagi hari.
-                Dikelilingi hutan tropis yang sejuk dan menyegarkan.
-              </p>
-              <div class="wisata-meta">
-                <span><i class="fas fa-map-marker-alt"></i>2 km dari pusat desa</span>
-                <span><i class="fas fa-clock"></i>07.00 – 17.00</span>
-                <span><i class="fas fa-ticket-alt"></i>Rp 15.000</span>
+            <div class="visi-misi-card">
+              <div class="visi-title mb-3">Misi Desa</div>
+              <div class="misi-item">
+                <div class="misi-dot"></div>
+                Meningkatkan kualitas SDM melalui pendidikan dan pelatihan
+              </div>
+              <div class="misi-item">
+                <div class="misi-dot"></div>
+                Mengembangkan potensi wisata berbasis kearifan lokal
+              </div>
+              <div class="misi-item">
+                <div class="misi-dot"></div>
+                Membangun infrastruktur desa yang memadai dan berkelanjutan
+              </div>
+              <div class="misi-item">
+                <div class="misi-dot"></div>
+                Meningkatkan perekonomian masyarakat desa
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- Small cards -->
-        <div class="col-lg-5">
-          <div class="row g-3">
-            <div class="col-6">
-              <div class="wisata-card-small">
-                <div class="wisata-card-img">
-                  <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&q=80" alt="Kebun Teh" />
+          <div class="col-lg-7">
+            <div class="kepala-desa-card mb-4">
+              <div class="kepala-desa-photo">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80"
+                  alt="Kepala Desa Sukamaju"
+                />
+              </div>
+              <div class="kepala-desa-content">
+                <div class="kepala-desa-label">Sambutan Kepala Desa</div>
+                <h3 class="kepala-desa-name">H. Ahmad Fauzi, S.Pd</h3>
+                <div class="kepala-desa-text">
+                  <p>
+                    Assalamu'alaikum warahmatullahi wabarakatuh. Puji syukur
+                    kita panjatkan ke hadirat Allah SWT atas segala rahmat dan
+                    karunia-Nya, sehingga Desa Sukamaju dapat terus bergerak
+                    maju dalam pelayanan, pembangunan, dan pemberdayaan
+                    masyarakat.
+                  </p>
+                  <p>
+                    Website resmi ini kami hadirkan sebagai media informasi,
+                    komunikasi, dan transparansi bagi seluruh warga desa maupun
+                    masyarakat luas. Melalui halaman ini, kami berharap setiap
+                    program, potensi, kegiatan, serta layanan desa dapat diakses
+                    dengan lebih mudah, cepat, dan terbuka.
+                  </p>
+                  <p>
+                    Kami mengajak seluruh masyarakat untuk bersama-sama menjaga
+                    semangat gotong royong, memperkuat kemandirian ekonomi,
+                    serta mengembangkan potensi pertanian, pariwisata, dan
+                    budaya lokal yang menjadi kebanggaan Desa Sukamaju.
+                  </p>
+                  <p>
+                    Semoga kehadiran website ini memberikan manfaat nyata dan
+                    menjadi jembatan yang mempererat hubungan antara pemerintah
+                    desa dengan masyarakat. Wassalamu'alaikum warahmatullahi
+                    wabarakatuh.
+                  </p>
                 </div>
-                <div class="wisata-card-body">
-                  <span class="wisata-card-tag">Alam</span>
-                  <div class="wisata-card-title"><a href="detail-wisata.html">Kebun Teh Puncak</a></div>
-                  <div class="wisata-card-info">
-                    <span class="rating-stars">★★★★★</span>
-                    <span style="color:var(--text-light)">4.9</span>
+              </div>
+            </div>
+
+            <div class="profil-info-card">
+              <h5
+                style="
+                  color: white;
+                  font-family: &quot;Playfair Display&quot;, serif;
+                  font-weight: 700;
+                  font-size: 1.1rem;
+                  margin-bottom: 0.5rem;
+                  padding-bottom: 1rem;
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                "
+              >
+                Informasi Desa
+              </h5>
+              <div class="profil-info-item">
+                <div class="profil-info-icon">
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <div>
+                  <div class="profil-info-label">Kepala Desa</div>
+                  <div class="profil-info-value">H. Ahmad Fauzi, S.Pd</div>
+                </div>
+              </div>
+              <div class="profil-info-item">
+                <div class="profil-info-icon"><i class="fas fa-map"></i></div>
+                <div>
+                  <div class="profil-info-label">Luas Wilayah</div>
+                  <div class="profil-info-value">420 Hektar</div>
+                </div>
+              </div>
+              <div class="profil-info-item">
+                <div class="profil-info-icon"><i class="fas fa-home"></i></div>
+                <div>
+                  <div class="profil-info-label">Jumlah RT / RW</div>
+                  <div class="profil-info-value">32 RT / 8 RW</div>
+                </div>
+              </div>
+              <div class="profil-info-item">
+                <div class="profil-info-icon">
+                  <i class="fas fa-mountain"></i>
+                </div>
+                <div>
+                  <div class="profil-info-label">Ketinggian</div>
+                  <div class="profil-info-value">800 – 1.200 mdpl</div>
+                </div>
+              </div>
+              <div class="profil-info-item">
+                <div class="profil-info-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                  <div class="profil-info-label">Telepon Kantor Desa</div>
+                  <div class="profil-info-value">(0251) 123-4567</div>
+                </div>
+              </div>
+              <div class="profil-info-item">
+                <div class="profil-info-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="profil-info-label">Email</div>
+                  <div class="profil-info-value">
+                    desa.sukamaju@bogorkab.go.id
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-6">
-              <div class="wisata-card-small">
-                <div class="wisata-card-img">
-                  <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=400&q=80"
-                    alt="Goa Peninggalan" />
-                </div>
-                <div class="wisata-card-body">
-                  <span class="wisata-card-tag">Sejarah</span>
-                  <div class="wisata-card-title"><a href="detail-wisata.html">Goa Peninggalan</a></div>
-                  <div class="wisata-card-info">
-                    <span class="rating-stars">★★★★☆</span>
-                    <span style="color:var(--text-light)">4.6</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="wisata-card-small">
-                <div class="wisata-card-img">
-                  <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=400&q=80"
-                    alt="Sungai Hijau" />
-                </div>
-                <div class="wisata-card-body">
-                  <span class="wisata-card-tag">Petualangan</span>
-                  <div class="wisata-card-title"><a href="detail-wisata.html">Sungai Hijau</a></div>
-                  <div class="wisata-card-info">
-                    <span class="rating-stars">★★★★★</span>
-                    <span style="color:var(--text-light)">4.8</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="wisata-card-small">
-                <div class="wisata-card-img">
-                  <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&q=80"
-                    alt="Bukit Panorama" />
-                </div>
-                <div class="wisata-card-body">
-                  <span class="wisata-card-tag">Panorama</span>
-                  <div class="wisata-card-title"><a href="detail-wisata.html">Bukit Panorama</a></div>
-                  <div class="wisata-card-info">
-                    <span class="rating-stars">★★★★★</span>
-                    <span style="color:var(--text-light)">5.0</span>
+              <div class="profil-info-item">
+                <div class="profil-info-icon"><i class="fas fa-clock"></i></div>
+                <div>
+                  <div class="profil-info-label">Jam Pelayanan</div>
+                  <div class="profil-info-value">
+                    Senin – Jumat, 08.00 – 15.00 WIB
                   </div>
                 </div>
               </div>
@@ -211,474 +447,504 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ========== PROFIL DESA ========== -->
-  <section class="profil-section" id="profil">
-    <div class="container position-relative">
-      <div class="row g-5">
-        <div class="col-lg-5">
-          <div class="section-label" style="color: var(--green-light);">Tentang Kami</div>
-          <h2 class="section-title" style="color: white;">Profil <em
-              style="color: var(--gold-light);">Desa</em><br>Sukamaju</h2>
-          <p style="color: rgba(255,255,255,0.7); font-size: 0.95rem; line-height: 1.9; margin: 1.5rem 0 2rem;">
-            Desa Sukamaju adalah desa yang terletak di kaki Gunung Gede Pangrango,
-            dikenal dengan kekayaan alam, keramahan warga, dan potensi wisata yang luar biasa.
+    <!-- ========== DATA KEPENDUDUKAN ========== -->
+    <section class="data-section" id="kependudukan">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="section-label" style="justify-content: center">
+            Data Kependudukan
+          </div>
+          <h2 class="section-title">Statistik <em>Penduduk</em> Desa</h2>
+          <p class="text-muted mt-2" style="font-size: 0.9rem">
+            Data per Desember 2024
           </p>
-
-          <a href="profil-desa.html" class="btn-profil-detail mb-4">
-            Lihat Selengkapnya
+          <a href="detail-kependudukan.html" class="btn-outline-green mt-3">
+            Lihat Data Lengkap
             <i class="fas fa-arrow-right"></i>
           </a>
+        </div>
 
-          <div class="visi-misi-card mb-4">
-            <div class="visi-title">Visi Desa</div>
-            <div class="visi-text">"Terwujudnya Desa Sukamaju yang maju, mandiri, dan berdaya saing berbasis pertanian
-              dan pariwisata berkelanjutan."</div>
+        <!-- Big stats -->
+        <div class="row g-4 mb-5">
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-users"></i></div>
+              <div class="stat-number">
+                8.432 <span class="stat-unit">jiwa</span>
+              </div>
+              <div class="stat-label">Total Penduduk</div>
+            </div>
           </div>
-
-          <div class="visi-misi-card">
-            <div class="visi-title mb-3">Misi Desa</div>
-            <div class="misi-item">
-              <div class="misi-dot"></div>Meningkatkan kualitas SDM melalui pendidikan dan pelatihan
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-home"></i></div>
+              <div class="stat-number">
+                2.108 <span class="stat-unit">KK</span>
+              </div>
+              <div class="stat-label">Kepala Keluarga</div>
             </div>
-            <div class="misi-item">
-              <div class="misi-dot"></div>Mengembangkan potensi wisata berbasis kearifan lokal
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-male"></i></div>
+              <div class="stat-number">
+                4.210 <span class="stat-unit">jiwa</span>
+              </div>
+              <div class="stat-label">Penduduk Laki-laki</div>
             </div>
-            <div class="misi-item">
-              <div class="misi-dot"></div>Membangun infrastruktur desa yang memadai dan berkelanjutan
-            </div>
-            <div class="misi-item">
-              <div class="misi-dot"></div>Meningkatkan perekonomian masyarakat desa
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="stat-card">
+              <div class="stat-icon"><i class="fas fa-female"></i></div>
+              <div class="stat-number">
+                4.222 <span class="stat-unit">jiwa</span>
+              </div>
+              <div class="stat-label">Penduduk Perempuan</div>
             </div>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="kepala-desa-card mb-4">
-            <div class="kepala-desa-photo">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&q=80" alt="Kepala Desa Sukamaju" />
-            </div>
-            <div class="kepala-desa-content">
-              <div class="kepala-desa-label">Sambutan Kepala Desa</div>
-              <h3 class="kepala-desa-name">H. Ahmad Fauzi, S.Pd</h3>
-              <div class="kepala-desa-text">
-                <p>
-                  Assalamu'alaikum warahmatullahi wabarakatuh. Puji syukur kita panjatkan ke hadirat Allah SWT atas
-                  segala rahmat dan karunia-Nya, sehingga Desa Sukamaju dapat terus bergerak maju dalam pelayanan,
-                  pembangunan, dan pemberdayaan masyarakat.
-                </p>
-                <p>
-                  Website resmi ini kami hadirkan sebagai media informasi, komunikasi, dan transparansi bagi seluruh
-                  warga desa maupun masyarakat luas. Melalui halaman ini, kami berharap setiap program, potensi,
-                  kegiatan, serta layanan desa dapat diakses dengan lebih mudah, cepat, dan terbuka.
-                </p>
-                <p>
-                  Kami mengajak seluruh masyarakat untuk bersama-sama menjaga semangat gotong royong, memperkuat
-                  kemandirian ekonomi, serta mengembangkan potensi pertanian, pariwisata, dan budaya lokal yang menjadi
-                  kebanggaan Desa Sukamaju.
-                </p>
-                <p>
-                  Semoga kehadiran website ini memberikan manfaat nyata dan menjadi jembatan yang mempererat hubungan
-                  antara pemerintah desa dengan masyarakat. Wassalamu'alaikum warahmatullahi wabarakatuh.
-                </p>
+
+        <!-- Charts / Bars -->
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="demografi-card">
+              <div class="demografi-title">Kelompok Usia</div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>0 – 14 Tahun</span><span>28%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 28%"></div>
+                </div>
+              </div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>15 – 29 Tahun</span><span>24%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 24%"></div>
+                </div>
+              </div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>30 – 49 Tahun</span><span>31%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div
+                    class="demografi-bar-fill"
+                    style="
+                      width: 31%;
+                      background: linear-gradient(
+                        90deg,
+                        var(--gold),
+                        var(--gold-light)
+                      );
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>50 – 64 Tahun</span><span>12%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 12%"></div>
+                </div>
+              </div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>65+ Tahun</span><span>5%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 5%"></div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="profil-info-card">
-            <h5
-              style="color: white; font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.1rem; margin-bottom: 0.5rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.1);">
-              Informasi Desa</h5>
-            <div class="profil-info-item">
-              <div class="profil-info-icon"><i class="fas fa-user-tie"></i></div>
-              <div>
-                <div class="profil-info-label">Kepala Desa</div>
-                <div class="profil-info-value">H. Ahmad Fauzi, S.Pd</div>
+          <div class="col-lg-4">
+            <div class="demografi-card">
+              <div class="demografi-title">Mata Pencaharian</div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>Petani</span><span>38%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 38%"></div>
+                </div>
+              </div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>Wirausaha</span><span>22%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 22%"></div>
+                </div>
+              </div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>PNS / TNI / POLRI</span><span>8%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div
+                    class="demografi-bar-fill"
+                    style="
+                      width: 8%;
+                      background: linear-gradient(
+                        90deg,
+                        var(--gold),
+                        var(--gold-light)
+                      );
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>Buruh / Karyawan</span><span>20%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 20%"></div>
+                </div>
+              </div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>Lainnya</span><span>12%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 12%"></div>
+                </div>
               </div>
             </div>
-            <div class="profil-info-item">
-              <div class="profil-info-icon"><i class="fas fa-map"></i></div>
-              <div>
-                <div class="profil-info-label">Luas Wilayah</div>
-                <div class="profil-info-value">420 Hektar</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="demografi-card">
+              <div class="demografi-title">Pendidikan Terakhir</div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>SD / Sederajat</span><span>32%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 32%"></div>
+                </div>
               </div>
-            </div>
-            <div class="profil-info-item">
-              <div class="profil-info-icon"><i class="fas fa-home"></i></div>
-              <div>
-                <div class="profil-info-label">Jumlah RT / RW</div>
-                <div class="profil-info-value">32 RT / 8 RW</div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>SMP / Sederajat</span><span>27%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 27%"></div>
+                </div>
               </div>
-            </div>
-            <div class="profil-info-item">
-              <div class="profil-info-icon"><i class="fas fa-mountain"></i></div>
-              <div>
-                <div class="profil-info-label">Ketinggian</div>
-                <div class="profil-info-value">800 – 1.200 mdpl</div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>SMA / Sederajat</span><span>30%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div
+                    class="demografi-bar-fill"
+                    style="
+                      width: 30%;
+                      background: linear-gradient(
+                        90deg,
+                        var(--gold),
+                        var(--gold-light)
+                      );
+                    "
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="profil-info-item">
-              <div class="profil-info-icon"><i class="fas fa-phone"></i></div>
-              <div>
-                <div class="profil-info-label">Telepon Kantor Desa</div>
-                <div class="profil-info-value">(0251) 123-4567</div>
-              </div>
-            </div>
-            <div class="profil-info-item">
-              <div class="profil-info-icon"><i class="fas fa-envelope"></i></div>
-              <div>
-                <div class="profil-info-label">Email</div>
-                <div class="profil-info-value">desa.sukamaju@bogorkab.go.id</div>
-              </div>
-            </div>
-            <div class="profil-info-item">
-              <div class="profil-info-icon"><i class="fas fa-clock"></i></div>
-              <div>
-                <div class="profil-info-label">Jam Pelayanan</div>
-                <div class="profil-info-value">Senin – Jumat, 08.00 – 15.00 WIB</div>
+              <div class="demografi-bar-item">
+                <div class="demografi-bar-label">
+                  <span>Diploma / S1+</span><span>11%</span>
+                </div>
+                <div class="demografi-bar-track">
+                  <div class="demografi-bar-fill" style="width: 11%"></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- ========== GALERI ========== -->
+    <section class="galeri-section">
+      <div class="container">
+        <div class="row align-items-end mb-4">
+          <div class="col">
+            <div class="section-label">Galeri</div>
+            <h2 class="section-title">Keindahan <em>Alam</em> Desa</h2>
+          </div>
+          <div class="col-auto">
+            <a href="lihat-semua-galeri.html" class="btn-outline-green btn-sm"
+              >Lihat Semua <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="galeri-grid">
+          <div
+            class="galeri-item large"
+            onclick="
+              openLightbox(
+                'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80',
+              )
+            "
+          >
+            <img
+              src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&q=80"
+              alt="Hutan"
+            />
+            <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
+          </div>
+          <div
+            class="galeri-item"
+            onclick="
+              openLightbox(
+                'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=1200&q=80',
+              )
+            "
+          >
+            <img
+              src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=400&q=80"
+              alt="Danau"
+            />
+            <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
+          </div>
+          <div
+            class="galeri-item"
+            onclick="
+              openLightbox(
+                'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80',
+              )
+            "
+          >
+            <img
+              src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=400&q=80"
+              alt="Sawah"
+            />
+            <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
+          </div>
+          <div
+            class="galeri-item"
+            onclick="
+              openLightbox(
+                'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80',
+              )
+            "
+          >
+            <img
+              src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80"
+              alt="Air Terjun"
+            />
+            <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
+          </div>
+          <div
+            class="galeri-item"
+            onclick="
+              openLightbox(
+                'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=80',
+              )
+            "
+          >
+            <img
+              src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80"
+              alt="Lembah"
+            />
+            <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BERITA ========== -->
+    <section class="berita-section">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-7">
+            <div class="section-label">Berita & Informasi</div>
+            <h2 class="section-title">Kabar Terbaru <em>Desa</em></h2>
+          </div>
+          <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
+            <a href="lihat-semua-berita.html" class="btn-outline-green"
+              >Semua Berita <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="berita-card">
+              <div class="berita-img">
+                <img
+                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80"
+                  alt="berita"
+                />
+              </div>
+              <div class="berita-body">
+                <div class="berita-date">12 Mei 2025</div>
+                <div class="berita-title">
+                  Festival Panen Raya Desa Sukamaju Siap Digelar Juni 2025
+                </div>
+                <div class="berita-excerpt">
+                  Festival tahunan yang menampilkan hasil bumi, seni budaya, dan
+                  kuliner khas desa akan segera hadir kembali...
+                </div>
+                <a href="detail-berita.html" class="berita-link"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="berita-card">
+              <div class="berita-img">
+                <img
+                  src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=400&q=80"
+                  alt="berita"
+                />
+              </div>
+              <div class="berita-body">
+                <div class="berita-date">5 Mei 2025</div>
+                <div class="berita-title">
+                  Jalur Baru Menuju Curug Pelangi Resmi Dibuka
+                </div>
+                <div class="berita-excerpt">
+                  Pemerintah desa berhasil menyelesaikan pembangunan jalur
+                  wisata baru yang lebih nyaman dan aman...
+                </div>
+                <a href="detail-berita.html" class="berita-link"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="berita-card">
+              <div class="berita-img">
+                <img
+                  src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80"
+                  alt="berita"
+                />
+              </div>
+              <div class="berita-body">
+                <div class="berita-date">29 Apr 2025</div>
+                <div class="berita-title">
+                  UMKM Desa Sukamaju Tembus Pasar Ekspor Produk Herbal
+                </div>
+                <div class="berita-excerpt">
+                  Kelompok UMKM Maju Bersama berhasil mengekspor produk olahan
+                  herbal ke Singapura dan Malaysia...
+                </div>
+                <a href="detail-berita.html" class="berita-link"
+                  >Baca Selengkapnya <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX (Hidden by default) -->
+    <div class="lightbox-modal" id="lightbox">
+      <i class="fas fa-times lightbox-close" onclick="closeLightbox()"></i>
+      <img
+        src=""
+        id="lightboxImg"
+        style="
+          max-width: 90%;
+          max-height: 85vh;
+          border-radius: 12px;
+          box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        "
+        alt="Zoomed image"
+      />
     </div>
-  </section>
 
-  <!-- ========== DATA KEPENDUDUKAN ========== -->
-  <section class="data-section" id="kependudukan">
-    <div class="container">
-      <div class="text-center mb-5">
-        <div class="section-label" style="justify-content:center;">Data Kependudukan</div>
-        <h2 class="section-title">Statistik <em>Penduduk</em> Desa</h2>
-        <p class="text-muted mt-2" style="font-size:0.9rem;">Data per Desember 2024</p>
-        <a href="detail-kependudukan.html" class="btn-outline-green mt-3">
-          Lihat Data Lengkap
-          <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-
-      <!-- Big stats -->
-      <div class="row g-4 mb-5">
-        <div class="col-6 col-lg-3">
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-users"></i></div>
-            <div class="stat-number">8.432 <span class="stat-unit">jiwa</span></div>
-            <div class="stat-label">Total Penduduk</div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-home"></i></div>
-            <div class="stat-number">2.108 <span class="stat-unit">KK</span></div>
-            <div class="stat-label">Kepala Keluarga</div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-male"></i></div>
-            <div class="stat-number">4.210 <span class="stat-unit">jiwa</span></div>
-            <div class="stat-label">Penduduk Laki-laki</div>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="stat-card">
-            <div class="stat-icon"><i class="fas fa-female"></i></div>
-            <div class="stat-number">4.222 <span class="stat-unit">jiwa</span></div>
-            <div class="stat-label">Penduduk Perempuan</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Charts / Bars -->
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="demografi-card">
-            <div class="demografi-title">Kelompok Usia</div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>0 – 14 Tahun</span><span>28%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:28%"></div>
-              </div>
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-desa">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-3 mb-1">
+              <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+              <div class="footer-brand">Desa Sukamaju</div>
             </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>15 – 29 Tahun</span><span>24%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:24%"></div>
-              </div>
+            <p class="footer-desc mt-3">
+              Portal resmi Desa Sukamaju, Kecamatan Ciawi, Kabupaten Bogor.
+              Melayani masyarakat dengan transparan, akuntabel, dan profesional.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
             </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>30 – 49 Tahun</span><span>31%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill"
-                  style="width:31%;background:linear-gradient(90deg,var(--gold),var(--gold-light))"></div>
-              </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="footer-title">Navigasi</div>
+            <a href="index.html" class="footer-link">Beranda</a>
+            <a href="index.html#profil" class="footer-link">Profil Desa</a>
+            <a href="index.html#kependudukan" class="footer-link"
+              >Kependudukan</a
+            >
+            <a href="lihat-semua-wisata.html" class="footer-link">Wisata</a>
+            <a href="lihat-semua-berita.html" class="footer-link">Berita</a>
+            <a href="lihat-semua-galeri.html" class="footer-link">Galeri</a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="footer-title">Layanan</div>
+            <a href="#" class="footer-link">Surat Keterangan</a>
+            <a href="#" class="footer-link">Pengaduan</a>
+            <a href="#" class="footer-link">Transparansi APBDes</a>
+            <a href="#" class="footer-link">PPID</a>
+            <a href="#" class="footer-link">Potensi Desa</a>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-title">Kontak</div>
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span
+                >Jl. Raya Sukamaju No. 1, Kec. Ciawi, Kab. Bogor, Jawa Barat
+                16760</span
+              >
             </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>50 – 64 Tahun</span><span>12%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:12%"></div>
-              </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone"></i>
+              <span>(0251) 123-4567</span>
             </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>65+ Tahun</span><span>5%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:5%"></div>
-              </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>desa.sukamaju@bogorkab.go.id</span>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Senin – Jumat, 08.00 – 15.00 WIB</span>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="demografi-card">
-            <div class="demografi-title">Mata Pencaharian</div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>Petani</span><span>38%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:38%"></div>
-              </div>
-            </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>Wirausaha</span><span>22%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:22%"></div>
-              </div>
-            </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>PNS / TNI / POLRI</span><span>8%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill"
-                  style="width:8%;background:linear-gradient(90deg,var(--gold),var(--gold-light))"></div>
-              </div>
-            </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>Buruh / Karyawan</span><span>20%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:20%"></div>
-              </div>
-            </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>Lainnya</span><span>12%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:12%"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="demografi-card">
-            <div class="demografi-title">Pendidikan Terakhir</div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>SD / Sederajat</span><span>32%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:32%"></div>
-              </div>
-            </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>SMP / Sederajat</span><span>27%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:27%"></div>
-              </div>
-            </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>SMA / Sederajat</span><span>30%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill"
-                  style="width:30%;background:linear-gradient(90deg,var(--gold),var(--gold-light))"></div>
-              </div>
-            </div>
-            <div class="demografi-bar-item">
-              <div class="demografi-bar-label"><span>Diploma / S1+</span><span>11%</span></div>
-              <div class="demografi-bar-track">
-                <div class="demografi-bar-fill" style="width:11%"></div>
-              </div>
-            </div>
-          </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          © 2025 Pemerintah Desa Sukamaju · Kecamatan Ciawi, Kabupaten Bogor ·
+          Dibuat dengan ❤ untuk masyarakat desa
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ========== GALERI ========== -->
-  <section class="galeri-section">
-    <div class="container">
-      <div class="row align-items-end mb-4">
-        <div class="col">
-          <div class="section-label">Galeri</div>
-          <h2 class="section-title">Keindahan <em>Alam</em> Desa</h2>
-        </div>
-        <div class="col-auto"><a href="lihat-semua-galeri.html" class="btn-outline-green btn-sm">Lihat Semua <i
-              class="fas fa-arrow-right"></i></a></div>
-      </div>
-      <div class="galeri-grid">
-        <div class="galeri-item large"
-          onclick="openLightbox('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=700&q=80" alt="Hutan" />
-          <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="galeri-item"
-          onclick="openLightbox('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=400&q=80" alt="Danau" />
-          <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="galeri-item"
-          onclick="openLightbox('https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=400&q=80" alt="Sawah" />
-          <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="galeri-item"
-          onclick="openLightbox('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80" alt="Air Terjun" />
-          <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
-        </div>
-        <div class="galeri-item"
-          onclick="openLightbox('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1200&q=80')">
-          <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=400&q=80" alt="Lembah" />
-          <div class="galeri-overlay"><i class="fas fa-expand-alt"></i></div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Sticky CTA -->
+    <a href="#wisata" class="sticky-wisata-cta">
+      <i class="fas fa-compass"></i>
+      Jelajahi Wisata
+    </a>
 
-  <!-- ========== BERITA ========== -->
-  <section class="berita-section">
-    <div class="container">
-      <div class="row align-items-end mb-5">
-        <div class="col-lg-7">
-          <div class="section-label">Berita & Informasi</div>
-          <h2 class="section-title">Kabar Terbaru <em>Desa</em></h2>
-        </div>
-        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0">
-          <a href="lihat-semua-berita.html" class="btn-outline-green">Semua Berita <i
-              class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="berita-card">
-            <div class="berita-img">
-              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=400&q=80" alt="berita" />
-            </div>
-            <div class="berita-body">
-              <div class="berita-date">12 Mei 2025</div>
-              <div class="berita-title">Festival Panen Raya Desa Sukamaju Siap Digelar Juni 2025</div>
-              <div class="berita-excerpt">Festival tahunan yang menampilkan hasil bumi, seni budaya, dan kuliner khas
-                desa akan segera hadir kembali...</div>
-              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="berita-card">
-            <div class="berita-img">
-              <img src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=400&q=80" alt="berita" />
-            </div>
-            <div class="berita-body">
-              <div class="berita-date">5 Mei 2025</div>
-              <div class="berita-title">Jalur Baru Menuju Curug Pelangi Resmi Dibuka</div>
-              <div class="berita-excerpt">Pemerintah desa berhasil menyelesaikan pembangunan jalur wisata baru yang
-                lebih nyaman dan aman...</div>
-              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="berita-card">
-            <div class="berita-img">
-              <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80" alt="berita" />
-            </div>
-            <div class="berita-body">
-              <div class="berita-date">29 Apr 2025</div>
-              <div class="berita-title">UMKM Desa Sukamaju Tembus Pasar Ekspor Produk Herbal</div>
-              <div class="berita-excerpt">Kelompok UMKM Maju Bersama berhasil mengekspor produk olahan herbal ke
-                Singapura dan Malaysia...</div>
-              <a href="detail-berita.html" class="berita-link">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LIGHTBOX (Hidden by default) -->
-  <div class="lightbox-modal" id="lightbox">
-    <i class="fas fa-times lightbox-close" onclick="closeLightbox()"></i>
-    <img src="" id="lightboxImg"
-      style="max-width: 90%; max-height: 85vh; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);"
-      alt="Zoomed image" />
-  </div>
-
-  <!-- ========== FOOTER ========== -->
-  <footer class="footer-desa">
-    <div class="container">
-      <div class="row g-5">
-        <div class="col-lg-4">
-          <div class="d-flex align-items-center gap-3 mb-1">
-            <div class="brand-logo"><i class="fas fa-leaf"></i></div>
-            <div class="footer-brand">Desa Sukamaju</div>
-          </div>
-          <p class="footer-desc mt-3">
-            Portal resmi Desa Sukamaju, Kecamatan Ciawi, Kabupaten Bogor.
-            Melayani masyarakat dengan transparan, akuntabel, dan profesional.
-          </p>
-          <div class="social-icons">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="footer-title">Navigasi</div>
-          <a href="index.html" class="footer-link">Beranda</a>
-          <a href="index.html#profil" class="footer-link">Profil Desa</a>
-          <a href="index.html#kependudukan" class="footer-link">Kependudukan</a>
-          <a href="lihat-semua-wisata.html" class="footer-link">Wisata</a>
-          <a href="lihat-semua-berita.html" class="footer-link">Berita</a>
-          <a href="lihat-semua-galeri.html" class="footer-link">Galeri</a>
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="footer-title">Layanan</div>
-          <a href="#" class="footer-link">Surat Keterangan</a>
-          <a href="#" class="footer-link">Pengaduan</a>
-          <a href="#" class="footer-link">Transparansi APBDes</a>
-          <a href="#" class="footer-link">PPID</a>
-          <a href="#" class="footer-link">Potensi Desa</a>
-        </div>
-        <div class="col-lg-4">
-          <div class="footer-title">Kontak</div>
-          <div class="footer-contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Jl. Raya Sukamaju No. 1, Kec. Ciawi, Kab. Bogor, Jawa Barat 16760</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-phone"></i>
-            <span>(0251) 123-4567</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-envelope"></i>
-            <span>desa.sukamaju@bogorkab.go.id</span>
-          </div>
-          <div class="footer-contact-item">
-            <i class="fas fa-clock"></i>
-            <span>Senin – Jumat, 08.00 – 15.00 WIB</span>
-          </div>
-        </div>
-      </div>
-      <hr class="footer-divider" />
-      <div class="footer-bottom">
-        © 2025 Pemerintah Desa Sukamaju · Kecamatan Ciawi, Kabupaten Bogor · Dibuat dengan ❤ untuk masyarakat desa
-      </div>
-    </div>
-  </footer>
-
-  <!-- Sticky CTA -->
-  <a href="#wisata" class="sticky-wisata-cta">
-    <i class="fas fa-compass"></i>
-    Jelajahi Wisata
-  </a>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/all.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.js"></script>
+  </body>
 </html>

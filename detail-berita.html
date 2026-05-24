@@ -1,410 +1,896 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Festival Panen Raya Desa Sukamaju — Berita Desa</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/all.css" />
-</head>
-<body>
-
-  <!-- Reading progress -->
-  <div class="reading-progress"><div class="reading-progress-bar" id="progressBar"></div></div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar-desa navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-3 text-decoration-none" href="#">
-        <div class="brand-logo"><i class="fas fa-leaf"></i></div>
-        <div>
-          <div class="brand-name">Desa Sukamaju</div>
-          <div class="brand-sub">Kec. Ciawi · Kab. Bogor</div>
-        </div>
-      </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-        <span style="color:white;font-size:1.3rem;"><i class="fas fa-bars"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-center gap-1">
-          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#profil">Profil Desa</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#kependudukan">Kependudukan</a></li>
-          <li class="nav-item"><a class="nav-link active" href="lihat-semua-berita.html">Berita</a></li>
-          <li class="nav-item ms-2"><a class="nav-link btn-wisata-nav" href="lihat-semua-wisata.html">🌿 Wisata</a></li>
-        </ul>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festival Panen Raya Desa Sukamaju — Berita Desa</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/all.css" />
+  </head>
+  <body>
+    <!-- Reading progress -->
+    <div class="reading-progress">
+      <div class="reading-progress-bar" id="progressBar"></div>
     </div>
-  </nav>
 
-  <!-- ── HERO ARTIKEL ── -->
-  <section class="hero-artikel">
-    <div class="hero-artikel-inner">
+    <!-- NAVBAR -->
+    <nav class="navbar-desa navbar navbar-expand-lg">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-9">
-            <!-- Breadcrumb -->
-            <div class="breadcrumb-artikel">
-              <a href="#">Beranda</a>
-              <i class="fas fa-chevron-right"></i>
-              <a href="#">Berita</a>
-              <i class="fas fa-chevron-right"></i>
-              <span style="color:rgba(255,255,255,0.8);">Festival & Acara</span>
-            </div>
+        <a
+          class="navbar-brand d-flex align-items-center gap-3 text-decoration-none"
+          href="#"
+        >
+          <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+          <div>
+            <div class="brand-name">Desa Sukamaju</div>
+            <div class="brand-sub">Kec. Ciawi · Kab. Bogor</div>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span style="color: white; font-size: 1.3rem"
+            ><i class="fas fa-bars"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-center gap-1">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#profil">Profil Desa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#kependudukan"
+                >Kependudukan</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="lihat-semua-berita.html"
+                >Berita</a
+              >
+            </li>
+            <li class="nav-item ms-2">
+              <a class="nav-link btn-wisata-nav" href="lihat-semua-wisata.html"
+                >🌿 Tempat Wisata</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-            <div class="artikel-kategori-pill">
-              <i class="fas fa-calendar-star"></i> Festival & Acara
+    <!-- ── HERO ARTIKEL ── -->
+    <section class="hero-artikel">
+      <div class="hero-artikel-inner">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-9">
+              <!-- Breadcrumb -->
+              <div class="breadcrumb-artikel">
+                <a href="#">Beranda</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="#">Berita</a>
+                <i class="fas fa-chevron-right"></i>
+                <span style="color: rgba(255, 255, 255, 0.8)"
+                  >Festival & Acara</span
+                >
+              </div>
+
+              <div class="artikel-kategori-pill">
+                <i class="fas fa-calendar-star"></i> Festival & Acara
+              </div>
+              <h1 class="artikel-headline">
+                Festival Panen Raya Desa Sukamaju Siap Digelar Juni 2025 — Lebih
+                Meriah dari Sebelumnya
+              </h1>
+              <p class="artikel-lead">
+                Setelah sukses besar tahun lalu, festival tahunan yang
+                menampilkan hasil bumi, seni budaya tradisional, dan kuliner
+                khas desa kembali hadir dengan skala lebih besar dan rangkaian
+                acara yang lebih beragam.
+              </p>
+
+              <!-- Meta info -->
+              <div class="artikel-meta-row">
+                <div class="author-chip">
+                  <img
+                    src="https://i.pravatar.cc/40?img=33"
+                    class="author-avatar"
+                    alt="Penulis"
+                  />
+                  <div>
+                    <div class="author-name">Dewi Fitriani</div>
+                    <div class="author-role">Staf Humas Desa</div>
+                  </div>
+                </div>
+                <div class="meta-divider"></div>
+                <div class="meta-item">
+                  <i class="far fa-calendar-alt"></i> 12 Mei 2025
+                </div>
+                <div class="meta-item">
+                  <i class="far fa-clock"></i> 5 menit membaca
+                </div>
+                <div class="meta-item">
+                  <i class="far fa-eye"></i> 1.248 dilihat
+                </div>
+                <div class="meta-item">
+                  <i class="far fa-comment"></i> 24 komentar
+                </div>
+              </div>
+
+              <!-- Hero Image -->
+              <div class="hero-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80"
+                  alt="Festival Panen Raya"
+                />
+                <div class="hero-image-caption">
+                  Suasana Festival Panen Raya Desa Sukamaju tahun lalu yang
+                  dihadiri ribuan pengunjung. | Foto: Humas Desa Sukamaju
+                </div>
+              </div>
             </div>
-            <h1 class="artikel-headline">
-              Festival Panen Raya Desa Sukamaju Siap Digelar Juni 2025 — Lebih Meriah dari Sebelumnya
-            </h1>
-            <p class="artikel-lead">
-              Setelah sukses besar tahun lalu, festival tahunan yang menampilkan hasil bumi, seni budaya tradisional, dan kuliner khas desa kembali hadir dengan skala lebih besar dan rangkaian acara yang lebih beragam.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── MAIN CONTENT ── -->
+    <div class="container py-5" style="padding-top: 50px !important">
+      <div class="row g-5">
+        <!-- ARTICLE CONTENT -->
+        <div class="col-lg-8">
+          <!-- Article Body -->
+          <article class="artikel-body reveal">
+            <p>
+              <strong>SUKAMAJU, 12 Mei 2025</strong> — Pemerintah Desa Sukamaju
+              resmi mengumumkan penyelenggaraan Festival Panen Raya tahun 2025
+              yang akan berlangsung pada <strong>20–22 Juni 2025</strong> di
+              Lapangan Desa Sukamaju. Ajang tahunan ini merupakan tradisi rutin
+              sebagai bentuk syukur atas hasil panen dan sekaligus menjadi
+              platform promosi potensi desa kepada masyarakat luas.
             </p>
 
-            <!-- Meta info -->
-            <div class="artikel-meta-row">
-              <div class="author-chip">
-                <img src="https://i.pravatar.cc/40?img=33" class="author-avatar" alt="Penulis"/>
-                <div>
-                  <div class="author-name">Dewi Fitriani</div>
-                  <div class="author-role">Staf Humas Desa</div>
-                </div>
-              </div>
-              <div class="meta-divider"></div>
-              <div class="meta-item"><i class="far fa-calendar-alt"></i> 12 Mei 2025</div>
-              <div class="meta-item"><i class="far fa-clock"></i> 5 menit membaca</div>
-              <div class="meta-item"><i class="far fa-eye"></i> 1.248 dilihat</div>
-              <div class="meta-item"><i class="far fa-comment"></i> 24 komentar</div>
+            <p>
+              Kepala Desa Sukamaju, H. Ahmad Fauzi, S.Pd., menyampaikan
+              antusiasme besar dalam persiapan festival kali ini. Pihak panitia
+              telah mempersiapkan berbagai kegiatan menarik yang tidak hanya
+              menyasar warga lokal, tetapi juga wisatawan dari luar daerah.
+            </p>
+
+            <div class="pull-quote">
+              "Tahun ini kami targetkan 5.000 pengunjung selama tiga hari
+              penyelenggaraan. Festival ini bukan sekadar hiburan, tapi juga
+              jendela dunia untuk melihat kekayaan budaya dan hasil bumi Desa
+              Sukamaju."
+              <cite>— H. Ahmad Fauzi, S.Pd., Kepala Desa Sukamaju</cite>
             </div>
 
-            <!-- Hero Image -->
-            <div class="hero-image-wrapper">
-              <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80" alt="Festival Panen Raya"/>
-              <div class="hero-image-caption">Suasana Festival Panen Raya Desa Sukamaju tahun lalu yang dihadiri ribuan pengunjung. | Foto: Humas Desa Sukamaju</div>
+            <h2>Rangkaian Kegiatan Festival</h2>
+
+            <p>
+              Festival Panen Raya 2025 dirancang dengan rangkaian acara yang
+              lebih komprehensif dibandingkan tahun sebelumnya. Panitia
+              menyiapkan tiga zona utama: zona budaya, zona kuliner, dan zona
+              pameran produk UMKM desa.
+            </p>
+
+            <div class="highlight-box">
+              <h4>📅 Jadwal Kegiatan Utama</h4>
+              <ul>
+                <li>
+                  <strong>Jumat, 20 Juni</strong> — Pembukaan resmi, Pawai
+                  Budaya, Pertunjukan Wayang Golek
+                </li>
+                <li>
+                  <strong>Sabtu, 21 Juni</strong> — Lomba Hasil Panen, Kontes
+                  Kuliner, Live Music Tradisional
+                </li>
+                <li>
+                  <strong>Minggu, 22 Juni</strong> — Pameran UMKM, Workshop
+                  Kerajinan, Penutupan & Penghargaan
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ── MAIN CONTENT ── -->
-  <div class="container py-5" style="padding-top:50px !important;">
-    <div class="row g-5">
+            <h2>Promosi Wisata Desa</h2>
 
-      <!-- ARTICLE CONTENT -->
-      <div class="col-lg-8">
+            <img
+              src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80"
+              alt="UMKM Desa"
+              class="inline-img"
+            />
+            <p class="img-caption">
+              Stand UMKM desa yang menjajakan produk herbal dan kerajinan tangan
+              khas Sukamaju.
+            </p>
 
-        <!-- Article Body -->
-        <article class="artikel-body reveal">
+            <p>
+              Salah satu agenda penting dalam festival ini adalah promosi
+              destinasi wisata unggulan Desa Sukamaju. Booth khusus akan
+              menampilkan informasi lengkap tentang 12 destinasi wisata yang
+              tersebar di wilayah desa, mulai dari Curug Pelangi, Kebun Teh
+              Puncak Hijau, hingga Goa Peninggalan Kuno.
+            </p>
 
-          <p><strong>SUKAMAJU, 12 Mei 2025</strong> — Pemerintah Desa Sukamaju resmi mengumumkan penyelenggaraan Festival Panen Raya tahun 2025 yang akan berlangsung pada <strong>20–22 Juni 2025</strong> di Lapangan Desa Sukamaju. Ajang tahunan ini merupakan tradisi rutin sebagai bentuk syukur atas hasil panen dan sekaligus menjadi platform promosi potensi desa kepada masyarakat luas.</p>
+            <p>
+              Panitia juga menyiapkan paket tur wisata khusus selama festival
+              berlangsung. Pengunjung dapat menikmati guided tour ke beberapa
+              destinasi wisata dengan harga spesial festival mulai dari Rp
+              75.000 per orang, sudah termasuk transport dan pemandu lokal
+              berpengalaman.
+            </p>
 
-          <p>Kepala Desa Sukamaju, H. Ahmad Fauzi, S.Pd., menyampaikan antusiasme besar dalam persiapan festival kali ini. Pihak panitia telah mempersiapkan berbagai kegiatan menarik yang tidak hanya menyasar warga lokal, tetapi juga wisatawan dari luar daerah.</p>
+            <h3>Partisipasi UMKM Lokal</h3>
 
-          <div class="pull-quote">
-            "Tahun ini kami targetkan 5.000 pengunjung selama tiga hari penyelenggaraan. Festival ini bukan sekadar hiburan, tapi juga jendela dunia untuk melihat kekayaan budaya dan hasil bumi Desa Sukamaju."
-            <cite>— H. Ahmad Fauzi, S.Pd., Kepala Desa Sukamaju</cite>
-          </div>
+            <p>
+              Festival ini juga menjadi panggung bagi pelaku UMKM Desa Sukamaju
+              untuk memperkenalkan produk-produk unggulan mereka. Tercatat lebih
+              dari 60 UMKM telah mendaftarkan diri untuk berpartisipasi, dengan
+              produk mulai dari olahan pertanian organik, kerajinan bambu, batik
+              tulis, hingga produk herbal yang sudah menembus pasar ekspor.
+            </p>
 
-          <h2>Rangkaian Kegiatan Festival</h2>
+            <div class="pull-quote">
+              "Ini kesempatan emas bagi UMKM kami. Tahun lalu, beberapa produk
+              kami berhasil mendapat pesanan tetap dari kota setelah tampil di
+              festival ini."
+              <cite>— Sari Dewi, Ketua UMKM Maju Bersama Sukamaju</cite>
+            </div>
 
-          <p>Festival Panen Raya 2025 dirancang dengan rangkaian acara yang lebih komprehensif dibandingkan tahun sebelumnya. Panitia menyiapkan tiga zona utama: zona budaya, zona kuliner, dan zona pameran produk UMKM desa.</p>
+            <h2>Cara Berpartisipasi</h2>
 
-          <div class="highlight-box">
-            <h4>📅 Jadwal Kegiatan Utama</h4>
+            <p>
+              Masyarakat umum dan wisatawan dapat menghadiri festival ini secara
+              gratis. Untuk pengunjung yang ingin mengikuti workshop kerajinan
+              atau paket tur wisata, pendaftaran dapat dilakukan melalui:
+            </p>
+
             <ul>
-              <li><strong>Jumat, 20 Juni</strong> — Pembukaan resmi, Pawai Budaya, Pertunjukan Wayang Golek</li>
-              <li><strong>Sabtu, 21 Juni</strong> — Lomba Hasil Panen, Kontes Kuliner, Live Music Tradisional</li>
-              <li><strong>Minggu, 22 Juni</strong> — Pameran UMKM, Workshop Kerajinan, Penutupan & Penghargaan</li>
+              <li>Kantor Desa Sukamaju (Senin–Jumat, 08.00–15.00 WIB)</li>
+              <li>WhatsApp Humas Desa: +62 812-3456-7890</li>
+              <li>Formulir online di halaman ini (segera tersedia)</li>
             </ul>
-          </div>
 
-          <h2>Promosi Wisata Desa</h2>
+            <p>
+              Bagi UMKM yang ingin membuka stand, pendaftaran masih dibuka
+              hingga <strong>30 Mei 2025</strong> dengan biaya sewa lapak sangat
+              terjangkau. Prioritas diberikan kepada warga Desa Sukamaju.
+            </p>
+          </article>
 
-          <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&q=80" alt="UMKM Desa" class="inline-img"/>
-          <p class="img-caption">Stand UMKM desa yang menjajakan produk herbal dan kerajinan tangan khas Sukamaju.</p>
-
-          <p>Salah satu agenda penting dalam festival ini adalah promosi destinasi wisata unggulan Desa Sukamaju. Booth khusus akan menampilkan informasi lengkap tentang 12 destinasi wisata yang tersebar di wilayah desa, mulai dari Curug Pelangi, Kebun Teh Puncak Hijau, hingga Goa Peninggalan Kuno.</p>
-
-          <p>Panitia juga menyiapkan paket tur wisata khusus selama festival berlangsung. Pengunjung dapat menikmati guided tour ke beberapa destinasi wisata dengan harga spesial festival mulai dari Rp 75.000 per orang, sudah termasuk transport dan pemandu lokal berpengalaman.</p>
-
-          <h3>Partisipasi UMKM Lokal</h3>
-
-          <p>Festival ini juga menjadi panggung bagi pelaku UMKM Desa Sukamaju untuk memperkenalkan produk-produk unggulan mereka. Tercatat lebih dari 60 UMKM telah mendaftarkan diri untuk berpartisipasi, dengan produk mulai dari olahan pertanian organik, kerajinan bambu, batik tulis, hingga produk herbal yang sudah menembus pasar ekspor.</p>
-
-          <div class="pull-quote">
-            "Ini kesempatan emas bagi UMKM kami. Tahun lalu, beberapa produk kami berhasil mendapat pesanan tetap dari kota setelah tampil di festival ini."
-            <cite>— Sari Dewi, Ketua UMKM Maju Bersama Sukamaju</cite>
-          </div>
-
-          <h2>Cara Berpartisipasi</h2>
-
-          <p>Masyarakat umum dan wisatawan dapat menghadiri festival ini secara gratis. Untuk pengunjung yang ingin mengikuti workshop kerajinan atau paket tur wisata, pendaftaran dapat dilakukan melalui:</p>
-
-          <ul>
-            <li>Kantor Desa Sukamaju (Senin–Jumat, 08.00–15.00 WIB)</li>
-            <li>WhatsApp Humas Desa: +62 812-3456-7890</li>
-            <li>Formulir online di halaman ini (segera tersedia)</li>
-          </ul>
-
-          <p>Bagi UMKM yang ingin membuka stand, pendaftaran masih dibuka hingga <strong>30 Mei 2025</strong> dengan biaya sewa lapak sangat terjangkau. Prioritas diberikan kepada warga Desa Sukamaju.</p>
-
-        </article>
-
-        <!-- TAGS -->
-        <div class="mt-4 mb-4 reveal">
-          <div class="fw-700 mb-2" style="font-weight:700; color:var(--green-deep); font-size:0.85rem;">Tags:</div>
-          <a href="#" class="tag-pill">Festival</a>
-          <a href="#" class="tag-pill">Panen Raya</a>
-          <a href="#" class="tag-pill">UMKM Desa</a>
-          <a href="#" class="tag-pill">Wisata</a>
-          <a href="#" class="tag-pill">Budaya</a>
-          <a href="#" class="tag-pill">Juni 2025</a>
-        </div>
-
-        <!-- SHARE -->
-        <div class="share-bar reveal mb-5">
-          <span class="share-label"><i class="fas fa-share-alt me-2" style="color:var(--green-fresh)"></i>Bagikan Berita:</span>
-          <button class="share-btn share-fb"><i class="fab fa-facebook-f"></i> Facebook</button>
-          <button class="share-btn share-wa"><i class="fab fa-whatsapp"></i> WhatsApp</button>
-          <button class="share-btn share-tw"><i class="fab fa-twitter"></i> Twitter</button>
-          <button class="share-btn share-copy" id="copyBtn"><i class="fas fa-link"></i> Salin Tautan</button>
-        </div>
-
-        <!-- AUTHOR BIO -->
-        <div class="sidebar-card reveal mb-5" style="border-radius:20px;">
-          <div class="sidebar-body" style="padding:1.8rem;">
-            <div class="d-flex gap-4 align-items-start">
-              <img src="https://i.pravatar.cc/80?img=33" style="width:72px;height:72px;border-radius:16px;object-fit:cover;border:3px solid var(--green-pale);" alt="Author"/>
-              <div>
-                <div style="font-size:0.72rem;font-weight:700;color:var(--green-mid);letter-spacing:2px;text-transform:uppercase;margin-bottom:4px;">Ditulis oleh</div>
-                <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:700;color:var(--green-deep);margin-bottom:4px;">Dewi Fitriani</div>
-                <div style="font-size:0.8rem;color:var(--text-light);margin-bottom:0.7rem;">Staf Humas & Komunikasi Desa Sukamaju</div>
-                <p style="font-size:0.85rem;color:var(--text-mid);line-height:1.7;margin:0;">Bertanggung jawab dalam pengelolaan informasi dan komunikasi publik Desa Sukamaju. Menulis berita desa sejak 2020.</p>
-              </div>
+          <!-- TAGS -->
+          <div class="mt-4 mb-4 reveal">
+            <div
+              class="fw-700 mb-2"
+              style="
+                font-weight: 700;
+                color: var(--green-deep);
+                font-size: 0.85rem;
+              "
+            >
+              Tags:
             </div>
-          </div>
-        </div>
-
-        <!-- KOMENTAR SECTION -->
-        <div class="reveal">
-          <div class="section-label">Komentar</div>
-          <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:700;color:var(--green-deep);margin-bottom:1.5rem;">24 Komentar</h3>
-
-          <!-- Komentar form -->
-          <div class="sidebar-card mb-4" style="border-radius:20px;">
-            <div class="sidebar-header">Tinggalkan Komentar</div>
-            <div class="sidebar-body" style="padding:1.5rem;">
-              <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Nama Anda" style="border-radius:12px;border-color:var(--green-pale);font-size:0.88rem;padding:0.75rem 1rem;"/>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control" placeholder="Email (tidak dipublikasikan)" style="border-radius:12px;border-color:var(--green-pale);font-size:0.88rem;padding:0.75rem 1rem;"/>
-                </div>
-              </div>
-              <textarea class="form-control mb-3" rows="4" placeholder="Tulis komentar Anda..." style="border-radius:12px;border-color:var(--green-pale);font-size:0.88rem;padding:0.75rem 1rem;resize:none;"></textarea>
-              <button style="background:linear-gradient(135deg,var(--green-fresh),var(--green-mid));color:white;border:none;border-radius:12px;padding:0.75rem 2rem;font-weight:700;font-size:0.9rem;cursor:pointer;">
-                <i class="fas fa-paper-plane me-2"></i>Kirim Komentar
-              </button>
-            </div>
+            <a href="#" class="tag-pill">Festival</a>
+            <a href="#" class="tag-pill">Panen Raya</a>
+            <a href="#" class="tag-pill">UMKM Desa</a>
+            <a href="#" class="tag-pill">Wisata</a>
+            <a href="#" class="tag-pill">Budaya</a>
+            <a href="#" class="tag-pill">Juni 2025</a>
           </div>
 
-          <!-- Existing comments -->
-          <div class="d-flex flex-column gap-3">
-            <div class="review-card" style="background:white;border-radius:16px;padding:1.3rem;border:1px solid var(--green-pale);">
-              <div class="d-flex gap-3">
-                <img src="https://i.pravatar.cc/44?img=5" style="width:42px;height:42px;border-radius:50%;object-fit:cover;" alt=""/>
-                <div class="flex-grow-1">
-                  <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div style="font-weight:700;font-size:0.88rem;color:var(--green-deep);">Agus Priyanto</div>
-                    <div style="font-size:0.75rem;color:var(--text-light);">12 Mei 2025, 14:32</div>
+          <!-- SHARE -->
+          <div class="share-bar reveal mb-5">
+            <span class="share-label"
+              ><i
+                class="fas fa-share-alt me-2"
+                style="color: var(--green-fresh)"
+              ></i
+              >Bagikan Berita:</span
+            >
+            <button class="share-btn share-fb">
+              <i class="fab fa-facebook-f"></i> Facebook
+            </button>
+            <button class="share-btn share-wa">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </button>
+            <button class="share-btn share-tw">
+              <i class="fab fa-twitter"></i> Twitter
+            </button>
+            <button class="share-btn share-copy" id="copyBtn">
+              <i class="fas fa-link"></i> Salin Tautan
+            </button>
+          </div>
+
+          <!-- AUTHOR BIO -->
+          <div class="sidebar-card reveal mb-5" style="border-radius: 20px">
+            <div class="sidebar-body" style="padding: 1.8rem">
+              <div class="d-flex gap-4 align-items-start">
+                <img
+                  src="https://i.pravatar.cc/80?img=33"
+                  style="
+                    width: 72px;
+                    height: 72px;
+                    border-radius: 16px;
+                    object-fit: cover;
+                    border: 3px solid var(--green-pale);
+                  "
+                  alt="Author"
+                />
+                <div>
+                  <div
+                    style="
+                      font-size: 0.72rem;
+                      font-weight: 700;
+                      color: var(--green-mid);
+                      letter-spacing: 2px;
+                      text-transform: uppercase;
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Ditulis oleh
                   </div>
-                  <p style="font-size:0.87rem;color:var(--text-mid);line-height:1.7;margin:0;">Alhamdulillah, senang dengernya! Tahun lalu saya bawa keluarga dan anak-anak happy banget. Tahun ini pasti balik lagi, semoga cuacanya bagus!</p>
-                  <button style="background:none;border:none;color:var(--green-mid);font-size:0.78rem;font-weight:600;cursor:pointer;padding:6px 0 0;"><i class="far fa-thumbs-up me-1"></i>12 Suka · Balas</button>
-                </div>
-              </div>
-            </div>
-            <div class="review-card" style="background:white;border-radius:16px;padding:1.3rem;border:1px solid var(--green-pale);">
-              <div class="d-flex gap-3">
-                <img src="https://i.pravatar.cc/44?img=9" style="width:42px;height:42px;border-radius:50%;object-fit:cover;" alt=""/>
-                <div class="flex-grow-1">
-                  <div class="d-flex justify-content-between align-items-center mb-1">
-                    <div style="font-weight:700;font-size:0.88rem;color:var(--green-deep);">Nani Wahyuni</div>
-                    <div style="font-size:0.75rem;color:var(--text-light);">12 Mei 2025, 16:05</div>
+                  <div
+                    style="
+                      font-family: &quot;Playfair Display&quot;, serif;
+                      font-size: 1.15rem;
+                      font-weight: 700;
+                      color: var(--green-deep);
+                      margin-bottom: 4px;
+                    "
+                  >
+                    Dewi Fitriani
                   </div>
-                  <p style="font-size:0.87rem;color:var(--text-mid);line-height:1.7;margin:0;">Produk UMKM kami siap tampil! Tahun lalu dapat pelanggan tetap dari Bandung, semoga tahun ini lebih banyak lagi. Terima kasih Pak Kades dan panitia!</p>
-                  <button style="background:none;border:none;color:var(--green-mid);font-size:0.78rem;font-weight:600;cursor:pointer;padding:6px 0 0;"><i class="far fa-thumbs-up me-1"></i>8 Suka · Balas</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /col-lg-8 -->
-
-      <!-- SIDEBAR -->
-      <div class="col-lg-4">
-        <div class="sticky-share">
-
-          <!-- Berita Terbaru -->
-          <div class="sidebar-card">
-            <div class="sidebar-header">📰 Berita Terbaru</div>
-            <div class="sidebar-body" style="padding:0.5rem 1.5rem;">
-              <a href="#" class="sidebar-news-item">
-                <img src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=150&q=70" class="sidebar-news-thumb" alt=""/>
-                <div>
-                  <div class="sidebar-news-title">Jalur Baru Menuju Curug Pelangi Resmi Dibuka untuk Umum</div>
-                  <div class="sidebar-news-date"><i class="far fa-clock me-1"></i>5 Mei 2025</div>
-                </div>
-              </a>
-              <a href="#" class="sidebar-news-item">
-                <img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=150&q=70" class="sidebar-news-thumb" alt=""/>
-                <div>
-                  <div class="sidebar-news-title">UMKM Sukamaju Tembus Pasar Ekspor ke Singapura dan Malaysia</div>
-                  <div class="sidebar-news-date"><i class="far fa-clock me-1"></i>29 Apr 2025</div>
-                </div>
-              </a>
-              <a href="#" class="sidebar-news-item">
-                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=150&q=70" class="sidebar-news-thumb" alt=""/>
-                <div>
-                  <div class="sidebar-news-title">Dana Desa 2025 Dialokasikan untuk Infrastruktur Jalan Wisata</div>
-                  <div class="sidebar-news-date"><i class="far fa-clock me-1"></i>22 Apr 2025</div>
-                </div>
-              </a>
-              <a href="#" class="sidebar-news-item">
-                <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=150&q=70" class="sidebar-news-thumb" alt=""/>
-                <div>
-                  <div class="sidebar-news-title">Posyandu Desa Sukamaju Raih Predikat Terbaik Kabupaten Bogor</div>
-                  <div class="sidebar-news-date"><i class="far fa-clock me-1"></i>15 Apr 2025</div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Wisata promo -->
-          <div class="sidebar-card">
-            <div class="sidebar-header">🌿 Destinasi Wisata Unggulan</div>
-            <div class="sidebar-body" style="padding:1rem;">
-              <div class="wisata-promo-card">
-                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80" alt="Curug Pelangi"/>
-                <div class="wisata-promo-overlay">
-                  <div class="wisata-promo-title">Curug Pelangi Sukamaju</div>
-                  <a href="#" class="wisata-promo-cta">Lihat Detail <i class="fas fa-arrow-right"></i></a>
+                  <div
+                    style="
+                      font-size: 0.8rem;
+                      color: var(--text-light);
+                      margin-bottom: 0.7rem;
+                    "
+                  >
+                    Staf Humas & Komunikasi Desa Sukamaju
+                  </div>
+                  <p
+                    style="
+                      font-size: 0.85rem;
+                      color: var(--text-mid);
+                      line-height: 1.7;
+                      margin: 0;
+                    "
+                  >
+                    Bertanggung jawab dalam pengelolaan informasi dan komunikasi
+                    publik Desa Sukamaju. Menulis berita desa sejak 2020.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Kategori -->
-          <div class="sidebar-card">
-            <div class="sidebar-header">🗂️ Kategori Berita</div>
-            <div class="sidebar-body" style="padding:0.5rem 1.5rem;">
-              <a href="#" class="cat-link"><span><i class="fas fa-calendar-star me-2" style="color:var(--green-fresh)"></i>Festival & Acara</span><span class="cat-count">12</span></a>
-              <a href="#" class="cat-link"><span><i class="fas fa-road me-2" style="color:var(--green-fresh)"></i>Infrastruktur</span><span class="cat-count">8</span></a>
-              <a href="#" class="cat-link"><span><i class="fas fa-store me-2" style="color:var(--green-fresh)"></i>UMKM & Ekonomi</span><span class="cat-count">15</span></a>
-              <a href="#" class="cat-link"><span><i class="fas fa-compass me-2" style="color:var(--green-fresh)"></i>Pariwisata</span><span class="cat-count">20</span></a>
-              <a href="#" class="cat-link"><span><i class="fas fa-heart me-2" style="color:var(--green-fresh)"></i>Sosial & Kesehatan</span><span class="cat-count">9</span></a>
-              <a href="#" class="cat-link"><span><i class="fas fa-landmark me-2" style="color:var(--green-fresh)"></i>Pemerintahan</span><span class="cat-count">6</span></a>
+          <!-- KOMENTAR SECTION -->
+          <div class="reveal">
+            <div class="section-label">Komentar</div>
+            <h3
+              style="
+                font-family: &quot;Playfair Display&quot;, serif;
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: var(--green-deep);
+                margin-bottom: 1.5rem;
+              "
+            >
+              24 Komentar
+            </h3>
+
+            <!-- Komentar form -->
+            <div class="sidebar-card mb-4" style="border-radius: 20px">
+              <div class="sidebar-header">Tinggalkan Komentar</div>
+              <div class="sidebar-body" style="padding: 1.5rem">
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Nama Anda"
+                      style="
+                        border-radius: 12px;
+                        border-color: var(--green-pale);
+                        font-size: 0.88rem;
+                        padding: 0.75rem 1rem;
+                      "
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email (tidak dipublikasikan)"
+                      style="
+                        border-radius: 12px;
+                        border-color: var(--green-pale);
+                        font-size: 0.88rem;
+                        padding: 0.75rem 1rem;
+                      "
+                    />
+                  </div>
+                </div>
+                <textarea
+                  class="form-control mb-3"
+                  rows="4"
+                  placeholder="Tulis komentar Anda..."
+                  style="
+                    border-radius: 12px;
+                    border-color: var(--green-pale);
+                    font-size: 0.88rem;
+                    padding: 0.75rem 1rem;
+                    resize: none;
+                  "
+                ></textarea>
+                <button
+                  style="
+                    background: linear-gradient(
+                      135deg,
+                      var(--green-fresh),
+                      var(--green-mid)
+                    );
+                    color: white;
+                    border: none;
+                    border-radius: 12px;
+                    padding: 0.75rem 2rem;
+                    font-weight: 700;
+                    font-size: 0.9rem;
+                    cursor: pointer;
+                  "
+                >
+                  <i class="fas fa-paper-plane me-2"></i>Kirim Komentar
+                </button>
+              </div>
+            </div>
+
+            <!-- Existing comments -->
+            <div class="d-flex flex-column gap-3">
+              <div
+                class="review-card"
+                style="
+                  background: white;
+                  border-radius: 16px;
+                  padding: 1.3rem;
+                  border: 1px solid var(--green-pale);
+                "
+              >
+                <div class="d-flex gap-3">
+                  <img
+                    src="https://i.pravatar.cc/44?img=5"
+                    style="
+                      width: 42px;
+                      height: 42px;
+                      border-radius: 50%;
+                      object-fit: cover;
+                    "
+                    alt=""
+                  />
+                  <div class="flex-grow-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <div
+                        style="
+                          font-weight: 700;
+                          font-size: 0.88rem;
+                          color: var(--green-deep);
+                        "
+                      >
+                        Agus Priyanto
+                      </div>
+                      <div style="font-size: 0.75rem; color: var(--text-light)">
+                        12 Mei 2025, 14:32
+                      </div>
+                    </div>
+                    <p
+                      style="
+                        font-size: 0.87rem;
+                        color: var(--text-mid);
+                        line-height: 1.7;
+                        margin: 0;
+                      "
+                    >
+                      Alhamdulillah, senang dengernya! Tahun lalu saya bawa
+                      keluarga dan anak-anak happy banget. Tahun ini pasti balik
+                      lagi, semoga cuacanya bagus!
+                    </p>
+                    <button
+                      style="
+                        background: none;
+                        border: none;
+                        color: var(--green-mid);
+                        font-size: 0.78rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        padding: 6px 0 0;
+                      "
+                    >
+                      <i class="far fa-thumbs-up me-1"></i>12 Suka · Balas
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="review-card"
+                style="
+                  background: white;
+                  border-radius: 16px;
+                  padding: 1.3rem;
+                  border: 1px solid var(--green-pale);
+                "
+              >
+                <div class="d-flex gap-3">
+                  <img
+                    src="https://i.pravatar.cc/44?img=9"
+                    style="
+                      width: 42px;
+                      height: 42px;
+                      border-radius: 50%;
+                      object-fit: cover;
+                    "
+                    alt=""
+                  />
+                  <div class="flex-grow-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-1"
+                    >
+                      <div
+                        style="
+                          font-weight: 700;
+                          font-size: 0.88rem;
+                          color: var(--green-deep);
+                        "
+                      >
+                        Nani Wahyuni
+                      </div>
+                      <div style="font-size: 0.75rem; color: var(--text-light)">
+                        12 Mei 2025, 16:05
+                      </div>
+                    </div>
+                    <p
+                      style="
+                        font-size: 0.87rem;
+                        color: var(--text-mid);
+                        line-height: 1.7;
+                        margin: 0;
+                      "
+                    >
+                      Produk UMKM kami siap tampil! Tahun lalu dapat pelanggan
+                      tetap dari Bandung, semoga tahun ini lebih banyak lagi.
+                      Terima kasih Pak Kades dan panitia!
+                    </p>
+                    <button
+                      style="
+                        background: none;
+                        border: none;
+                        color: var(--green-mid);
+                        font-size: 0.78rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        padding: 6px 0 0;
+                      "
+                    >
+                      <i class="far fa-thumbs-up me-1"></i>8 Suka · Balas
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <!-- /col-lg-8 -->
 
-        </div>
-      </div>
-
-    </div><!-- /row -->
-  </div>
-
-  <!-- BERITA TERKAIT -->
-  <section style="padding: 80px 0; background: var(--green-mist);">
-    <div class="container">
-      <div class="row align-items-end mb-5">
-        <div class="col">
-          <div class="section-label">Baca Juga</div>
-          <h2 class="section-title">Berita <em>Terkait</em> Lainnya</h2>
-        </div>
-        <div class="col-auto"><a href="lihat-semua-berita.html" class="btn-outline-green">Semua Berita <i class="fas fa-arrow-right"></i></a></div>
-      </div>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <a href="#" class="related-card">
-            <div class="related-img"><img src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=400&q=80" alt=""/></div>
-            <div class="related-body">
-              <span class="related-cat">Pariwisata</span>
-              <div class="related-title">Jalur Baru Menuju Curug Pelangi Resmi Dibuka untuk Umum</div>
-              <div class="related-date"><i class="far fa-calendar me-1"></i>5 Mei 2025</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="#" class="related-card">
-            <div class="related-img"><img src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80" alt=""/></div>
-            <div class="related-body">
-              <span class="related-cat">UMKM & Ekonomi</span>
-              <div class="related-title">Produk Herbal UMKM Sukamaju Berhasil Tembus Pasar Ekspor</div>
-              <div class="related-date"><i class="far fa-calendar me-1"></i>29 Apr 2025</div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="#" class="related-card">
-            <div class="related-img"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&q=80" alt=""/></div>
-            <div class="related-body">
-              <span class="related-cat">Infrastruktur</span>
-              <div class="related-title">Pembangunan Jalan Wisata Desa Sukamaju Capai 80% Progress</div>
-              <div class="related-date"><i class="far fa-calendar me-1"></i>18 Apr 2025</div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <div class="row g-4 mb-3">
+        <!-- SIDEBAR -->
         <div class="col-lg-4">
-          <div class="d-flex align-items-center gap-3 mb-3">
-            <div class="brand-logo"><i class="fas fa-leaf"></i></div>
-            <div class="footer-brand">Desa Sukamaju</div>
-          </div>
-          <p style="font-size:0.87rem;line-height:1.8;max-width:280px;">Portal resmi Desa Sukamaju, Kecamatan Ciawi, Kabupaten Bogor.</p>
-        </div>
-        <div class="col-6 col-lg-2">
-          <div class="footer-title">Navigasi</div>
-          <a href="index.html" class="footer-link">Beranda</a>
-          <a href="index.html#profil" class="footer-link">Profil Desa</a>
-          <a href="index.html#kependudukan" class="footer-link">Kependudukan</a>
-          <a href="lihat-semua-wisata.html" class="footer-link">Wisata</a>
-          <a href="lihat-semua-berita.html" class="footer-link">Berita</a>
-          <a href="lihat-semua-galeri.html" class="footer-link">Galeri</a>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="footer-title">Kategori Berita</div>
-          <a href="#" class="footer-link">Festival & Acara</a>
-          <a href="#" class="footer-link">Pariwisata</a>
-          <a href="#" class="footer-link">UMKM & Ekonomi</a>
-          <a href="#" class="footer-link">Pemerintahan</a>
-        </div>
-        <div class="col-lg-3">
-          <div class="footer-title">Kontak</div>
-          <div style="font-size:0.87rem;line-height:2.2;">
-            <div><i class="fas fa-phone me-2" style="color:var(--green-fresh)"></i>(0251) 123-4567</div>
-            <div><i class="fas fa-envelope me-2" style="color:var(--green-fresh)"></i>desa.sukamaju@bogorkab.go.id</div>
+          <div class="sticky-share">
+            <!-- Berita Terbaru -->
+            <div class="sidebar-card">
+              <div class="sidebar-header">📰 Berita Terbaru</div>
+              <div class="sidebar-body" style="padding: 0.5rem 1.5rem">
+                <a href="#" class="sidebar-news-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=150&q=70"
+                    class="sidebar-news-thumb"
+                    alt=""
+                  />
+                  <div>
+                    <div class="sidebar-news-title">
+                      Jalur Baru Menuju Curug Pelangi Resmi Dibuka untuk Umum
+                    </div>
+                    <div class="sidebar-news-date">
+                      <i class="far fa-clock me-1"></i>5 Mei 2025
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="sidebar-news-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=150&q=70"
+                    class="sidebar-news-thumb"
+                    alt=""
+                  />
+                  <div>
+                    <div class="sidebar-news-title">
+                      UMKM Sukamaju Tembus Pasar Ekspor ke Singapura dan
+                      Malaysia
+                    </div>
+                    <div class="sidebar-news-date">
+                      <i class="far fa-clock me-1"></i>29 Apr 2025
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="sidebar-news-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=150&q=70"
+                    class="sidebar-news-thumb"
+                    alt=""
+                  />
+                  <div>
+                    <div class="sidebar-news-title">
+                      Dana Desa 2025 Dialokasikan untuk Infrastruktur Jalan
+                      Wisata
+                    </div>
+                    <div class="sidebar-news-date">
+                      <i class="far fa-clock me-1"></i>22 Apr 2025
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="sidebar-news-item">
+                  <img
+                    src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=150&q=70"
+                    class="sidebar-news-thumb"
+                    alt=""
+                  />
+                  <div>
+                    <div class="sidebar-news-title">
+                      Posyandu Desa Sukamaju Raih Predikat Terbaik Kabupaten
+                      Bogor
+                    </div>
+                    <div class="sidebar-news-date">
+                      <i class="far fa-clock me-1"></i>15 Apr 2025
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Wisata promo -->
+            <div class="sidebar-card">
+              <div class="sidebar-header">🌿 Destinasi Wisata Unggulan</div>
+              <div class="sidebar-body" style="padding: 1rem">
+                <div class="wisata-promo-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&q=80"
+                    alt="Curug Pelangi"
+                  />
+                  <div class="wisata-promo-overlay">
+                    <div class="wisata-promo-title">Curug Pelangi Sukamaju</div>
+                    <a href="#" class="wisata-promo-cta"
+                      >Lihat Detail <i class="fas fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Kategori -->
+            <div class="sidebar-card">
+              <div class="sidebar-header">🗂️ Kategori Berita</div>
+              <div class="sidebar-body" style="padding: 0.5rem 1.5rem">
+                <a href="#" class="cat-link"
+                  ><span
+                    ><i
+                      class="fas fa-calendar-star me-2"
+                      style="color: var(--green-fresh)"
+                    ></i
+                    >Festival & Acara</span
+                  ><span class="cat-count">12</span></a
+                >
+                <a href="#" class="cat-link"
+                  ><span
+                    ><i
+                      class="fas fa-road me-2"
+                      style="color: var(--green-fresh)"
+                    ></i
+                    >Infrastruktur</span
+                  ><span class="cat-count">8</span></a
+                >
+                <a href="#" class="cat-link"
+                  ><span
+                    ><i
+                      class="fas fa-store me-2"
+                      style="color: var(--green-fresh)"
+                    ></i
+                    >UMKM & Ekonomi</span
+                  ><span class="cat-count">15</span></a
+                >
+                <a href="#" class="cat-link"
+                  ><span
+                    ><i
+                      class="fas fa-compass me-2"
+                      style="color: var(--green-fresh)"
+                    ></i
+                    >Pariwisata</span
+                  ><span class="cat-count">20</span></a
+                >
+                <a href="#" class="cat-link"
+                  ><span
+                    ><i
+                      class="fas fa-heart me-2"
+                      style="color: var(--green-fresh)"
+                    ></i
+                    >Sosial & Kesehatan</span
+                  ><span class="cat-count">9</span></a
+                >
+                <a href="#" class="cat-link"
+                  ><span
+                    ><i
+                      class="fas fa-landmark me-2"
+                      style="color: var(--green-fresh)"
+                    ></i
+                    >Pemerintahan</span
+                  ><span class="cat-count">6</span></a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">© 2025 Pemerintah Desa Sukamaju · Kecamatan Ciawi, Kabupaten Bogor</div>
+      <!-- /row -->
     </div>
-  </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/all.js"></script>
-</body>
+    <!-- BERITA TERKAIT -->
+    <section style="padding: 80px 0; background: var(--green-mist)">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col">
+            <div class="section-label">Baca Juga</div>
+            <h2 class="section-title">Berita <em>Terkait</em> Lainnya</h2>
+          </div>
+          <div class="col-auto">
+            <a href="lihat-semua-berita.html" class="btn-outline-green"
+              >Semua Berita <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a href="#" class="related-card">
+              <div class="related-img">
+                <img
+                  src="https://images.unsplash.com/photo-1473081556163-2a17de81fc97?w=400&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="related-body">
+                <span class="related-cat">Pariwisata</span>
+                <div class="related-title">
+                  Jalur Baru Menuju Curug Pelangi Resmi Dibuka untuk Umum
+                </div>
+                <div class="related-date">
+                  <i class="far fa-calendar me-1"></i>5 Mei 2025
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="related-card">
+              <div class="related-img">
+                <img
+                  src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="related-body">
+                <span class="related-cat">UMKM & Ekonomi</span>
+                <div class="related-title">
+                  Produk Herbal UMKM Sukamaju Berhasil Tembus Pasar Ekspor
+                </div>
+                <div class="related-date">
+                  <i class="far fa-calendar me-1"></i>29 Apr 2025
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="#" class="related-card">
+              <div class="related-img">
+                <img
+                  src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=400&q=80"
+                  alt=""
+                />
+              </div>
+              <div class="related-body">
+                <span class="related-cat">Infrastruktur</span>
+                <div class="related-title">
+                  Pembangunan Jalan Wisata Desa Sukamaju Capai 80% Progress
+                </div>
+                <div class="related-date">
+                  <i class="far fa-calendar me-1"></i>18 Apr 2025
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="row g-4 mb-3">
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <div class="brand-logo"><i class="fas fa-leaf"></i></div>
+              <div class="footer-brand">Desa Sukamaju</div>
+            </div>
+            <p style="font-size: 0.87rem; line-height: 1.8; max-width: 280px">
+              Portal resmi Desa Sukamaju, Kecamatan Ciawi, Kabupaten Bogor.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <div class="footer-title">Navigasi</div>
+            <a href="index.html" class="footer-link">Beranda</a>
+            <a href="index.html#profil" class="footer-link">Profil Desa</a>
+            <a href="index.html#kependudukan" class="footer-link"
+              >Kependudukan</a
+            >
+            <a href="lihat-semua-wisata.html" class="footer-link">Wisata</a>
+            <a href="lihat-semua-berita.html" class="footer-link">Berita</a>
+            <a href="lihat-semua-galeri.html" class="footer-link">Galeri</a>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="footer-title">Kategori Berita</div>
+            <a href="#" class="footer-link">Festival & Acara</a>
+            <a href="#" class="footer-link">Pariwisata</a>
+            <a href="#" class="footer-link">UMKM & Ekonomi</a>
+            <a href="#" class="footer-link">Pemerintahan</a>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-title">Kontak</div>
+            <div style="font-size: 0.87rem; line-height: 2.2">
+              <div>
+                <i
+                  class="fas fa-phone me-2"
+                  style="color: var(--green-fresh)"
+                ></i
+                >(0251) 123-4567
+              </div>
+              <div>
+                <i
+                  class="fas fa-envelope me-2"
+                  style="color: var(--green-fresh)"
+                ></i
+                >desa.sukamaju@bogorkab.go.id
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          © 2025 Pemerintah Desa Sukamaju · Kecamatan Ciawi, Kabupaten Bogor
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.js"></script>
+  </body>
 </html>
-
